@@ -17,7 +17,7 @@ We collect a larger set of unlabeled charts to emphasize the MLLM's ability to i
 
 ## Todo
 - [ ] Open source all data of ChartBench.
-- [ ] Open source the evaluations.
+- [x] Open source demo of ChartBench (10%).
 - [x] Open source the evaluate scripts.
 - [x] Open source the inference scripts.
 - [x] Open source the demo data.
