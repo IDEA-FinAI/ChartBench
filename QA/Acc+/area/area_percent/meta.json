@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "area",
+        "image_type": "area_percent",
+        "QA_type": "Acc+",
+        "image_path": "./images/area/area_percent/0.png",
+        "data_path": "./data/area/genescloud/0.txt",
+        "data_meta": "./data/area/meta.json",
+        "qa_path": "./QA/Acc+/area/area_percent/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a area chart, instead of line chart.",
+                "Qw": "This graph is a line chart, instead of area chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of Retailer C at Month 2 is 7.21%.",
+                "Qw": "According to this chart, the percentage of Retailer C at Month 2 is 9.21%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Month 9, the percentage of Retailer D is higher than Retailer A.",
+                "Qw": "According to this chart, at Month 9, the percentage of Retailer A is higher than Retailer D.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Retailer E at Month 12 has the highest percentage 9.73%.",
+                "Qw": "According to this chart, the Retailer E at Month 5 has the highest percentage 9.73%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "area",
+        "image_type": "area_percent",
+        "QA_type": "Acc+",
+        "image_path": "./images/area/area_percent/1.png",
+        "data_path": "./data/area/genescloud/1.txt",
+        "data_meta": "./data/area/meta.json",
+        "qa_path": "./QA/Acc+/area/area_percent/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a area chart, instead of box chart.",
+                "Qw": "This graph is a box chart, instead of area chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of Product C at Quarter Q1 is 21.74%.",
+                "Qw": "According to this chart, the percentage of Product C at Quarter Q1 is 26.09%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Quarter Q4, the percentage of Product D is higher than Product A.",
+                "Qw": "According to this chart, at Quarter Q4, the percentage of Product A is higher than Product D.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Product D at Quarter Q4 has the highest percentage 28.57%.",
+                "Qw": "According to this chart, the Product D at Quarter Q2 has the highest percentage 28.57%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "area",
+        "image_type": "area_percent",
+        "QA_type": "Acc+",
+        "image_path": "./images/area/area_percent/2.png",
+        "data_path": "./data/area/genescloud/2.txt",
+        "data_meta": "./data/area/meta.json",
+        "qa_path": "./QA/Acc+/area/area_percent/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a area chart, instead of others chart.",
+                "Qw": "This graph is a others chart, instead of area chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of City X at Month 5 is 9.65%.",
+                "Qw": "According to this chart, the percentage of City X at Month 5 is 11.25%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Month 7, the percentage of City Y is higher than City X.",
+                "Qw": "According to this chart, at Month 7, the percentage of City X is higher than City Y.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the City Y at Month 7 has the highest percentage 12.60%.",
+                "Qw": "According to this chart, the City Y at Month 10 has the highest percentage 12.60%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "area",
+        "image_type": "area_percent",
+        "QA_type": "Acc+",
+        "image_path": "./images/area/area_percent/3.png",
+        "data_path": "./data/area/genescloud/3.txt",
+        "data_meta": "./data/area/meta.json",
+        "qa_path": "./QA/Acc+/area/area_percent/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a area chart, instead of others chart.",
+                "Qw": "This graph is a others chart, instead of area chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of Website A at Month 4 is 7.72%.",
+                "Qw": "According to this chart, the percentage of Website A at Month 4 is 7.32%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Month 7, the percentage of Website B is higher than Website A.",
+                "Qw": "According to this chart, at Month 7, the percentage of Website A is higher than Website B.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Website B at Month 12 has the highest percentage 10.21%.",
+                "Qw": "According to this chart, the Website B at Month 3 has the highest percentage 10.21%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "area",
+        "image_type": "area_percent",
+        "QA_type": "Acc+",
+        "image_path": "./images/area/area_percent/4.png",
+        "data_path": "./data/area/genescloud/4.txt",
+        "data_meta": "./data/area/meta.json",
+        "qa_path": "./QA/Acc+/area/area_percent/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a area chart, instead of bar chart.",
+                "Qw": "This graph is a bar chart, instead of area chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of Product X at Quarter Q3 is 27.45%.",
+                "Qw": "According to this chart, the percentage of Product X at Quarter Q3 is 29.41%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Quarter Q4, the percentage of Product X is higher than Product Y.",
+                "Qw": "According to this chart, at Quarter Q4, the percentage of Product Y is higher than Product X.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Product Z at Quarter Q4 has the highest percentage 30.00%.",
+                "Qw": "According to this chart, the Product Z at Quarter Q1 has the highest percentage 30.00%.",
+                "Type": "conception"
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "pie",
+        "image_type": "InteSun",
+        "QA_type": "Acc+",
+        "image_path": "./images/pie/InteSun/0.png",
+        "data_path": "./data/InteSunPlot/genescloud/0.txt",
+        "data_meta": "./data/InteSunPlot/meta.json",
+        "qa_path": "./QA/Acc+/pie/InteSun/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a pie chart, instead of line chart.",
+                "Qw": "This graph is a line chart, instead of pie chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of Furniture is 8.55%.",
+                "Qw": "According to this chart, the percentage of Furniture is 3.29%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the percentage of Electronics is higher than Home & Kitchen.",
+                "Qw": "According to this chart, the percentage of Home & Kitchen is higher than Electronics.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Smartphones has the highest percentage 16.45%.",
+                "Qw": "According to this chart, the Appliances has the highest percentage 16.45%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "pie",
+        "image_type": "InteSun",
+        "QA_type": "Acc+",
+        "image_path": "./images/pie/InteSun/1.png",
+        "data_path": "./data/InteSunPlot/genescloud/1.txt",
+        "data_meta": "./data/InteSunPlot/meta.json",
+        "qa_path": "./QA/Acc+/pie/InteSun/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a pie chart, instead of combination chart.",
+                "Qw": "This graph is a combination chart, instead of pie chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of Volkswagen is 8.82%.",
+                "Qw": "According to this chart, the percentage of Volkswagen is 7.35%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the percentage of Japanese Brands is higher than European Brands.",
+                "Qw": "According to this chart, the percentage of European Brands is higher than Japanese Brands.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Toyota has the highest percentage 22.06%.",
+                "Qw": "According to this chart, the Volkswagen has the highest percentage 22.06%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "pie",
+        "image_type": "InteSun",
+        "QA_type": "Acc+",
+        "image_path": "./images/pie/InteSun/2.png",
+        "data_path": "./data/InteSunPlot/genescloud/2.txt",
+        "data_meta": "./data/InteSunPlot/meta.json",
+        "qa_path": "./QA/Acc+/pie/InteSun/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a pie chart, instead of area chart.",
+                "Qw": "This graph is a area chart, instead of pie chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of Samsung is 29.17%.",
+                "Qw": "According to this chart, the percentage of Samsung is 16.67%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the percentage of Android is higher than iOS.",
+                "Qw": "According to this chart, the percentage of iOS is higher than Android.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Apple has the highest percentage 33.33%.",
+                "Qw": "According to this chart, the Xiaomi has the highest percentage 33.33%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "pie",
+        "image_type": "InteSun",
+        "QA_type": "Acc+",
+        "image_path": "./images/pie/InteSun/3.png",
+        "data_path": "./data/InteSunPlot/genescloud/3.txt",
+        "data_meta": "./data/InteSunPlot/meta.json",
+        "qa_path": "./QA/Acc+/pie/InteSun/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a pie chart, instead of box chart.",
+                "Qw": "This graph is a box chart, instead of pie chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of Wind Power is 17.39%.",
+                "Qw": "According to this chart, the percentage of Wind Power is 15.65%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the percentage of Renewable Energy is higher than Non-renewable Energy.",
+                "Qw": "According to this chart, the percentage of Non-renewable Energy is higher than Renewable Energy.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Solar Power has the highest percentage 21.74%.",
+                "Qw": "According to this chart, the Natural Gas has the highest percentage 21.74%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "pie",
+        "image_type": "InteSun",
+        "QA_type": "Acc+",
+        "image_path": "./images/pie/InteSun/4.png",
+        "data_path": "./data/InteSunPlot/genescloud/4.txt",
+        "data_meta": "./data/InteSunPlot/meta.json",
+        "qa_path": "./QA/Acc+/pie/InteSun/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a pie chart, instead of box chart.",
+                "Qw": "This graph is a box chart, instead of pie chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of YouTube is 10.99%.",
+                "Qw": "According to this chart, the percentage of YouTube is 6.59%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the percentage of 25-34 is higher than 35-44.",
+                "Qw": "According to this chart, the percentage of 35-44 is higher than 25-34.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Instagram has the highest percentage 16.48%.",
+                "Qw": "According to this chart, the LinkedIn has the highest percentage 16.48%.",
+                "Type": "conception"
+            }
+        }
+    }
+}

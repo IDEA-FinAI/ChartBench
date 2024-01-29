@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "box",
+        "image_type": "box_v",
+        "QA_type": "Acc+",
+        "image_path": "./images/box/box_v/0.png",
+        "data_path": "./data/box/genescloud/0.txt",
+        "data_meta": "./data/box/meta.json",
+        "qa_path": "./QA/Acc+/box/box_v/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a box chart, instead of radar chart.",
+                "Qw": "This graph is a radar chart, instead of box chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the medium Rainfall (in millimeters) of 2015 is around 636.5.",
+                "Qw": "According to this chart, the medium Rainfall (in millimeters) of 2015 is around 674.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the medium Rainfall (in millimeters) of 2017 is higher than 2018.",
+                "Qw": "According to this chart, the medium Rainfall (in millimeters) of 2018 is higher than 2017.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the 2017 has the highest medium Rainfall (in millimeters).",
+                "Qw": "According to this chart, the 2019 has the highest medium Rainfall (in millimeters).",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "box",
+        "image_type": "box_v",
+        "QA_type": "Acc+",
+        "image_path": "./images/box/box_v/1.png",
+        "data_path": "./data/box/genescloud/1.txt",
+        "data_meta": "./data/box/meta.json",
+        "qa_path": "./QA/Acc+/box/box_v/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a box chart, instead of combination chart.",
+                "Qw": "This graph is a combination chart, instead of box chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the medium Revenue (in thousands of dollars) of March is around 266.5.",
+                "Qw": "According to this chart, the medium Revenue (in thousands of dollars) of March is around 299.5.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the medium Revenue (in thousands of dollars) of February is higher than March.",
+                "Qw": "According to this chart, the medium Revenue (in thousands of dollars) of March is higher than February.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the February has the highest medium Revenue (in thousands of dollars).",
+                "Qw": "According to this chart, the January has the highest medium Revenue (in thousands of dollars).",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "box",
+        "image_type": "box_v",
+        "QA_type": "Acc+",
+        "image_path": "./images/box/box_v/2.png",
+        "data_path": "./data/box/genescloud/2.txt",
+        "data_meta": "./data/box/meta.json",
+        "qa_path": "./QA/Acc+/box/box_v/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a box chart, instead of area chart.",
+                "Qw": "This graph is a area chart, instead of box chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the medium Satisfaction Score (on a scale of 1 to 10) of Q3 is around 5.0.",
+                "Qw": "According to this chart, the medium Satisfaction Score (on a scale of 1 to 10) of Q3 is around 4.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the medium Satisfaction Score (on a scale of 1 to 10) of Q2 is higher than Q3.",
+                "Qw": "According to this chart, the medium Satisfaction Score (on a scale of 1 to 10) of Q3 is higher than Q2.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Q2 has the highest medium Satisfaction Score (on a scale of 1 to 10).",
+                "Qw": "According to this chart, the Q1 has the highest medium Satisfaction Score (on a scale of 1 to 10).",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "box",
+        "image_type": "box_v",
+        "QA_type": "Acc+",
+        "image_path": "./images/box/box_v/3.png",
+        "data_path": "./data/box/genescloud/3.txt",
+        "data_meta": "./data/box/meta.json",
+        "qa_path": "./QA/Acc+/box/box_v/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a box chart, instead of radar chart.",
+                "Qw": "This graph is a radar chart, instead of box chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the medium Temperature Range (in degrees Celsius) of Wednesday is around 2.5.",
+                "Qw": "According to this chart, the medium Temperature Range (in degrees Celsius) of Wednesday is around 14.5.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the medium Temperature Range (in degrees Celsius) of Tuesday is higher than Friday.",
+                "Qw": "According to this chart, the medium Temperature Range (in degrees Celsius) of Friday is higher than Tuesday.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Monday has the highest medium Temperature Range (in degrees Celsius).",
+                "Qw": "According to this chart, the Tuesday has the highest medium Temperature Range (in degrees Celsius).",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "box",
+        "image_type": "box_v",
+        "QA_type": "Acc+",
+        "image_path": "./images/box/box_v/4.png",
+        "data_path": "./data/box/genescloud/4.txt",
+        "data_meta": "./data/box/meta.json",
+        "qa_path": "./QA/Acc+/box/box_v/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a box chart, instead of line chart.",
+                "Qw": "This graph is a line chart, instead of box chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the medium Number of Visits of February is around 3874.5.",
+                "Qw": "According to this chart, the medium Number of Visits of February is around 6200.5.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the medium Number of Visits of March is higher than May.",
+                "Qw": "According to this chart, the medium Number of Visits of May is higher than March.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the March has the highest medium Number of Visits.",
+                "Qw": "According to this chart, the January has the highest medium Number of Visits.",
+                "Type": "conception"
+            }
+        }
+    }
+}

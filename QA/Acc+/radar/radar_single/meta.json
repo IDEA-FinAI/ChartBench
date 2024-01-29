@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "radar",
+        "image_type": "radar_single",
+        "QA_type": "Acc+",
+        "image_path": "./images/radar/radar_single/0.png",
+        "data_path": "./data/radar_single/genescloud/0.txt",
+        "data_meta": "./data/radar_single/meta.json",
+        "qa_path": "./QA/Acc+/radar/radar_single/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a radar chart, instead of others chart.",
+                "Qw": "This graph is a others chart, instead of radar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the value of Communication is 7.80.",
+                "Qw": "According to this chart, the value of Communication is 9.20.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the value of Problem Solving is higher than Communication.",
+                "Qw": "According to this chart, the value of Communication is higher than Problem Solving.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Problem Solving has the highest value 9.20.",
+                "Qw": "According to this chart, the Communication has the highest value 9.20.",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "radar",
+        "image_type": "radar_single",
+        "QA_type": "Acc+",
+        "image_path": "./images/radar/radar_single/1.png",
+        "data_path": "./data/radar_single/genescloud/1.txt",
+        "data_meta": "./data/radar_single/meta.json",
+        "qa_path": "./QA/Acc+/radar/radar_single/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a radar chart, instead of box chart.",
+                "Qw": "This graph is a box chart, instead of radar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the value of Flexibility is 9.20.",
+                "Qw": "According to this chart, the value of Flexibility is 8.80.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the value of Flexibility is higher than Agility.",
+                "Qw": "According to this chart, the value of Agility is higher than Flexibility.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Flexibility has the highest value 9.20.",
+                "Qw": "According to this chart, the Agility has the highest value 9.20.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "radar",
+        "image_type": "radar_single",
+        "QA_type": "Acc+",
+        "image_path": "./images/radar/radar_single/2.png",
+        "data_path": "./data/radar_single/genescloud/2.txt",
+        "data_meta": "./data/radar_single/meta.json",
+        "qa_path": "./QA/Acc+/radar/radar_single/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a radar chart, instead of box chart.",
+                "Qw": "This graph is a box chart, instead of radar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the value of Piano is 9.00.",
+                "Qw": "According to this chart, the value of Piano is 8.50.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the value of Piano is higher than Drums.",
+                "Qw": "According to this chart, the value of Drums is higher than Piano.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Piano has the highest value 9.00.",
+                "Qw": "According to this chart, the Drums has the highest value 9.00.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "radar",
+        "image_type": "radar_single",
+        "QA_type": "Acc+",
+        "image_path": "./images/radar/radar_single/3.png",
+        "data_path": "./data/radar_single/genescloud/3.txt",
+        "data_meta": "./data/radar_single/meta.json",
+        "qa_path": "./QA/Acc+/radar/radar_single/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a radar chart, instead of area chart.",
+                "Qw": "This graph is a area chart, instead of radar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the value of Conversion Rate is 8.10.",
+                "Qw": "According to this chart, the value of Conversion Rate is 7.90.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the value of Social Media Engagement is higher than Email Click-through Rate.",
+                "Qw": "According to this chart, the value of Email Click-through Rate is higher than Social Media Engagement.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Social Media Engagement has the highest value 9.30.",
+                "Qw": "According to this chart, the ROI has the highest value 9.30.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "radar",
+        "image_type": "radar_single",
+        "QA_type": "Acc+",
+        "image_path": "./images/radar/radar_single/4.png",
+        "data_path": "./data/radar_single/genescloud/4.txt",
+        "data_meta": "./data/radar_single/meta.json",
+        "qa_path": "./QA/Acc+/radar/radar_single/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a radar chart, instead of combination chart.",
+                "Qw": "This graph is a combination chart, instead of radar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the value of Water Usage Reduction is 8.30.",
+                "Qw": "According to this chart, the value of Water Usage Reduction is 9.10.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the value of Water Usage Reduction is higher than Carbon Footprint.",
+                "Qw": "According to this chart, the value of Carbon Footprint is higher than Water Usage Reduction.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Energy Conservation has the highest value 9.10.",
+                "Qw": "According to this chart, the Sustainable Transportation has the highest value 9.10.",
+                "Type": "conception"
+            }
+        }
+    }
+}

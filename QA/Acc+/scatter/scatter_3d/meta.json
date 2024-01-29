@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "scatter",
+        "image_type": "scatter_3d",
+        "QA_type": "Acc+",
+        "image_path": "./images/scatter/scatter_3d/0.png",
+        "data_path": "./data/scatter_3d/genescloud/0.txt",
+        "data_meta": "./data/scatter_3d/meta.json",
+        "qa_path": "./QA/Acc+/scatter/scatter_3d/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a scatter chart, instead of node_link chart.",
+                "Qw": "This graph is a node_link chart, instead of scatter chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for T-Shirt D, when the Sales = 400.0, the Advertising Expenses is 40.0.",
+                "Qw": "According to this chart, for T-Shirt D, when the Sales = 400.0, the Advertising Expenses is 60.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, if the radius of the circle indicates Market Share (%), the Market Share (%) of Smartphone B is higher than T-Shirt D.",
+                "Qw": "According to this chart, if the radius of the circle indicates Market Share (%), the Market Share (%) of T-Shirt D is higher than Smartphone B.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Smartphone B has the highest Advertising Expenses 80.00.",
+                "Qw": "According to this chart, the T-Shirt D has the highest Advertising Expenses 80.00.",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "scatter",
+        "image_type": "scatter_3d",
+        "QA_type": "Acc+",
+        "image_path": "./images/scatter/scatter_3d/1.png",
+        "data_path": "./data/scatter_3d/genescloud/1.txt",
+        "data_meta": "./data/scatter_3d/meta.json",
+        "qa_path": "./QA/Acc+/scatter/scatter_3d/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a scatter chart, instead of combination chart.",
+                "Qw": "This graph is a combination chart, instead of scatter chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Company E, when the Price = 80.0, the Volume is 200.0.",
+                "Qw": "According to this chart, for Company E, when the Price = 80.0, the Volume is 500.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, if the radius of the circle indicates Market Capitalization, the Market Capitalization of Company A is higher than Company C.",
+                "Qw": "According to this chart, if the radius of the circle indicates Market Capitalization, the Market Capitalization of Company C is higher than Company A.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Company B has the highest Volume 700.00.",
+                "Qw": "According to this chart, the Company D has the highest Volume 700.00.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "scatter",
+        "image_type": "scatter_3d",
+        "QA_type": "Acc+",
+        "image_path": "./images/scatter/scatter_3d/2.png",
+        "data_path": "./data/scatter_3d/genescloud/2.txt",
+        "data_meta": "./data/scatter_3d/meta.json",
+        "qa_path": "./QA/Acc+/scatter/scatter_3d/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a scatter chart, instead of node_link chart.",
+                "Qw": "This graph is a node_link chart, instead of scatter chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Student 4, when the Math Score = 75.0, the Science Score is 80.0.",
+                "Qw": "According to this chart, for Student 4, when the Math Score = 75.0, the Science Score is 85.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, if the radius of the circle indicates English Score, the English Score of Student 3 is higher than Student 4.",
+                "Qw": "According to this chart, if the radius of the circle indicates English Score, the English Score of Student 4 is higher than Student 3.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Student 5 has the highest Science Score 90.00.",
+                "Qw": "According to this chart, the Student 4 has the highest Science Score 90.00.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "scatter",
+        "image_type": "scatter_3d",
+        "QA_type": "Acc+",
+        "image_path": "./images/scatter/scatter_3d/3.png",
+        "data_path": "./data/scatter_3d/genescloud/3.txt",
+        "data_meta": "./data/scatter_3d/meta.json",
+        "qa_path": "./QA/Acc+/scatter/scatter_3d/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a scatter chart, instead of pie chart.",
+                "Qw": "This graph is a pie chart, instead of scatter chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Store B, when the Satisfaction Rate = 85.0, the Number of Reviews is 400.0.",
+                "Qw": "According to this chart, for Store B, when the Satisfaction Rate = 85.0, the Number of Reviews is 300.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, if the radius of the circle indicates Repeat Customers (%), the Repeat Customers (%) of Hotel E is higher than Restaurant D.",
+                "Qw": "According to this chart, if the radius of the circle indicates Repeat Customers (%), the Repeat Customers (%) of Restaurant D is higher than Hotel E.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Hotel F has the highest Number of Reviews 700.00.",
+                "Qw": "According to this chart, the Restaurant D has the highest Number of Reviews 700.00.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "scatter",
+        "image_type": "scatter_3d",
+        "QA_type": "Acc+",
+        "image_path": "./images/scatter/scatter_3d/4.png",
+        "data_path": "./data/scatter_3d/genescloud/4.txt",
+        "data_meta": "./data/scatter_3d/meta.json",
+        "qa_path": "./QA/Acc+/scatter/scatter_3d/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a scatter chart, instead of area chart.",
+                "Qw": "This graph is a area chart, instead of scatter chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Customer F, when the Monthly Revenue = 250.0, the Customer Tenure is 30.0.",
+                "Qw": "According to this chart, for Customer F, when the Monthly Revenue = 250.0, the Customer Tenure is 36.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, if the radius of the circle indicates Churn Rate (%), the Churn Rate (%) of Customer A is higher than Customer F.",
+                "Qw": "According to this chart, if the radius of the circle indicates Churn Rate (%), the Churn Rate (%) of Customer F is higher than Customer A.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Customer E has the highest Customer Tenure 36.00.",
+                "Qw": "According to this chart, the Customer C has the highest Customer Tenure 36.00.",
+                "Type": "conception"
+            }
+        }
+    }
+}

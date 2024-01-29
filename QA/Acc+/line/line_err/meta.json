@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "line",
+        "image_type": "line_err",
+        "QA_type": "Acc+",
+        "image_path": "./images/line/line_err/0.png",
+        "data_path": "./data/line_err/genescloud/0.txt",
+        "data_meta": "./data/line_err/meta.json",
+        "qa_path": "./QA/Acc+/line/line_err/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a line chart, instead of pie chart.",
+                "Qw": "This graph is a pie chart, instead of line chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Widget B, the mean value of Revenue at Month Feb is 440.00.",
+                "Qw": "According to this chart, for Widget A, the mean value of Revenue at Month Feb is 440.00.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Revenue standard deviation of Widget B is higher than Widget A at Month May.",
+                "Qw": "According to this chart, the Revenue standard deviation of Widget A is higher than Widget B at Month May.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Widget A has the highest mean Revenue value 623.33 at Month Apr.",
+                "Qw": "According to this chart, the Widget A has the highest mean Revenue value 623.33 at Month May.",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "line",
+        "image_type": "line_err",
+        "QA_type": "Acc+",
+        "image_path": "./images/line/line_err/1.png",
+        "data_path": "./data/line_err/genescloud/1.txt",
+        "data_meta": "./data/line_err/meta.json",
+        "qa_path": "./QA/Acc+/line/line_err/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a line chart, instead of node_link chart.",
+                "Qw": "This graph is a node_link chart, instead of line chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for New York, the mean value of Temperature at Month Jan is 1.67.",
+                "Qw": "According to this chart, for Los Angeles, the mean value of Temperature at Month Jan is 1.67.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Temperature standard deviation of New York is higher than Los Angeles at Month Feb.",
+                "Qw": "According to this chart, the Temperature standard deviation of Los Angeles is higher than New York at Month Feb.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Los Angeles has the highest mean Temperature value 22.33 at Month Apr.",
+                "Qw": "According to this chart, the Los Angeles has the highest mean Temperature value 22.33 at Month Mar.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "line",
+        "image_type": "line_err",
+        "QA_type": "Acc+",
+        "image_path": "./images/line/line_err/2.png",
+        "data_path": "./data/line_err/genescloud/2.txt",
+        "data_meta": "./data/line_err/meta.json",
+        "qa_path": "./QA/Acc+/line/line_err/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a line chart, instead of scatter chart.",
+                "Qw": "This graph is a scatter chart, instead of line chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Website B, the mean value of Visitors at Month Mar is 125.00.",
+                "Qw": "According to this chart, for Website A, the mean value of Visitors at Month Mar is 125.00.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Visitors standard deviation of Website A is higher than Website B at Month Jan.",
+                "Qw": "According to this chart, the Visitors standard deviation of Website B is higher than Website A at Month Jan.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Website A has the highest mean Visitors value 151.67 at Month Mar.",
+                "Qw": "According to this chart, the Website A has the highest mean Visitors value 151.67 at Month Feb.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "line",
+        "image_type": "line_err",
+        "QA_type": "Acc+",
+        "image_path": "./images/line/line_err/3.png",
+        "data_path": "./data/line_err/genescloud/3.txt",
+        "data_meta": "./data/line_err/meta.json",
+        "qa_path": "./QA/Acc+/line/line_err/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a line chart, instead of scatter chart.",
+                "Qw": "This graph is a scatter chart, instead of line chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Company B, the mean value of Price at Month Feb is 35.07.",
+                "Qw": "According to this chart, for Company A, the mean value of Price at Month Feb is 35.07.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Price standard deviation of Company A is higher than Company B at Month Jan.",
+                "Qw": "According to this chart, the Price standard deviation of Company B is higher than Company A at Month Jan.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Company A has the highest mean Price value 54.77 at Month Apr.",
+                "Qw": "According to this chart, the Company A has the highest mean Price value 54.77 at Month Feb.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "line",
+        "image_type": "line_err",
+        "QA_type": "Acc+",
+        "image_path": "./images/line/line_err/4.png",
+        "data_path": "./data/line_err/genescloud/4.txt",
+        "data_meta": "./data/line_err/meta.json",
+        "qa_path": "./QA/Acc+/line/line_err/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a line chart, instead of bar chart.",
+                "Qw": "This graph is a bar chart, instead of line chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for City B, the mean value of Consumption at Month Jan is 423.33.",
+                "Qw": "According to this chart, for City A, the mean value of Consumption at Month Jan is 423.33.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Consumption standard deviation of City B is higher than City A at Month Apr.",
+                "Qw": "According to this chart, the Consumption standard deviation of City A is higher than City B at Month Apr.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the City A has the highest mean Consumption value 573.33 at Month Mar.",
+                "Qw": "According to this chart, the City A has the highest mean Consumption value 573.33 at Month Feb.",
+                "Type": "conception"
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "line",
+        "image_type": "line_multi_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/line/line_multi_wi_anno/0.png",
+        "data_path": "./data/line_multi/genescloud/0.txt",
+        "data_meta": "./data/line_multi/meta.json",
+        "qa_path": "./QA/Acc+/line/line_multi_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a line chart, instead of bar chart.",
+                "Qw": "This graph is a bar chart, instead of line chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for India, the Millions of Units Sold at Years 2021 is 200.0.",
+                "Qw": "According to this chart, for India, the Millions of Units Sold at Years 2021 is 100.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Millions of Units Sold of USA is higher than Brazil at Years 2018.",
+                "Qw": "According to this chart, the Millions of Units Sold of Brazil is higher than USA at Years 2018.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, China has the highest Millions of Units Sold 300.0 at Years 2022.",
+                "Qw": "According to this chart, China has the highest Millions of Units Sold 300.0 at Years 2021.",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "line",
+        "image_type": "line_multi_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/line/line_multi_wi_anno/1.png",
+        "data_path": "./data/line_multi/genescloud/1.txt",
+        "data_meta": "./data/line_multi/meta.json",
+        "qa_path": "./QA/Acc+/line/line_multi_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a line chart, instead of scatter chart.",
+                "Qw": "This graph is a scatter chart, instead of line chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Nuclear, the Quadrillion BTUs at Years 2021 is 22.0.",
+                "Qw": "According to this chart, for Nuclear, the Quadrillion BTUs at Years 2021 is 14.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Quadrillion BTUs of Natural Gas is higher than Coal at Years 2016.",
+                "Qw": "According to this chart, the Quadrillion BTUs of Coal is higher than Natural Gas at Years 2016.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, Natural Gas has the highest Quadrillion BTUs 48.0 at Years 2022.",
+                "Qw": "According to this chart, Natural Gas has the highest Quadrillion BTUs 48.0 at Years 2016.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "line",
+        "image_type": "line_multi_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/line/line_multi_wi_anno/2.png",
+        "data_path": "./data/line_multi/genescloud/2.txt",
+        "data_meta": "./data/line_multi/meta.json",
+        "qa_path": "./QA/Acc+/line/line_multi_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a line chart, instead of scatter chart.",
+                "Qw": "This graph is a scatter chart, instead of line chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Middle East, the Millions of Passengers at Years 2016 is 450.0.",
+                "Qw": "According to this chart, for Middle East, the Millions of Passengers at Years 2016 is 600.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Millions of Passengers of Asia-Pacific is higher than North America at Years 2017.",
+                "Qw": "According to this chart, the Millions of Passengers of North America is higher than Asia-Pacific at Years 2017.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, Asia-Pacific has the highest Millions of Passengers 1100.0 at Years 2019.",
+                "Qw": "According to this chart, Asia-Pacific has the highest Millions of Passengers 1100.0 at Years 2017.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "line",
+        "image_type": "line_multi_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/line/line_multi_wi_anno/3.png",
+        "data_path": "./data/line_multi/genescloud/3.txt",
+        "data_meta": "./data/line_multi/meta.json",
+        "qa_path": "./QA/Acc+/line/line_multi_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a line chart, instead of combination chart.",
+                "Qw": "This graph is a combination chart, instead of line chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for China, the Billion Metric Tons at Years 2019 is 14.0.",
+                "Qw": "According to this chart, for China, the Billion Metric Tons at Years 2019 is 11.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Billion Metric Tons of China is higher than India at Years 2021.",
+                "Qw": "According to this chart, the Billion Metric Tons of India is higher than China at Years 2021.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, China has the highest Billion Metric Tons 17.0 at Years 2022.",
+                "Qw": "According to this chart, China has the highest Billion Metric Tons 17.0 at Years 2018.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "line",
+        "image_type": "line_multi_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/line/line_multi_wi_anno/4.png",
+        "data_path": "./data/line_multi/genescloud/4.txt",
+        "data_meta": "./data/line_multi/meta.json",
+        "qa_path": "./QA/Acc+/line/line_multi_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a line chart, instead of pie chart.",
+                "Qw": "This graph is a pie chart, instead of line chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Asia, the Billions of Users at Years 2019 is 3.0.",
+                "Qw": "According to this chart, for Asia, the Billions of Users at Years 2019 is 2.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Billions of Users of Asia is higher than North America at Years 2020.",
+                "Qw": "According to this chart, the Billions of Users of North America is higher than Asia at Years 2020.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, Asia has the highest Billions of Users 3.8 at Years 2022.",
+                "Qw": "According to this chart, Asia has the highest Billions of Users 3.8 at Years 2021.",
+                "Type": "conception"
+            }
+        }
+    }
+}

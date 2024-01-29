@@ -1,0 +1,157 @@
+{
+    "1.txt": {
+        "chart_type": "bar",
+        "image_type": "vertical_single",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/vertical_single/1.png",
+        "data_path": "./data/bar_single/genescloud/1.txt",
+        "data_meta": "./data/bar_single/meta.json",
+        "qa_path": "./QA/Acc+/bar/vertical_single/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of area chart.",
+                "Qw": "This graph is a area chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Revenue of Year 2018 is 18.60.",
+                "Qw": "According to this chart, the Revenue of Year 2018 is 14.80.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Revenue of Year 2022 is higher than Year 2021.",
+                "Qw": "According to this chart, the Revenue of Year 2021 is higher than Year 2022.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Year 2020 has the highest Revenue 20.10.",
+                "Qw": "According to this chart, the Year 2019 has the highest Revenue 20.10.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "bar",
+        "image_type": "vertical_single",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/vertical_single/2.png",
+        "data_path": "./data/bar_single/genescloud/2.txt",
+        "data_meta": "./data/bar_single/meta.json",
+        "qa_path": "./QA/Acc+/bar/vertical_single/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of radar chart.",
+                "Qw": "This graph is a radar chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Percentage of Year 2019 is 3.50.",
+                "Qw": "According to this chart, the Percentage of Year 2019 is 4.20.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Percentage of Year 2021 is higher than Year 2022.",
+                "Qw": "According to this chart, the Percentage of Year 2022 is higher than Year 2021.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Year 2016 has the highest Percentage 5.70.",
+                "Qw": "According to this chart, the Year 2017 has the highest Percentage 5.70.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "bar",
+        "image_type": "vertical_single",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/vertical_single/3.png",
+        "data_path": "./data/bar_single/genescloud/3.txt",
+        "data_meta": "./data/bar_single/meta.json",
+        "qa_path": "./QA/Acc+/bar/vertical_single/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of others chart.",
+                "Qw": "This graph is a others chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Grade Point Average of Year 2019 is 3.90.",
+                "Qw": "According to this chart, the Grade Point Average of Year 2019 is 3.60.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Grade Point Average of Year 2022 is higher than Year 2020.",
+                "Qw": "According to this chart, the Grade Point Average of Year 2020 is higher than Year 2022.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Year 2019 has the highest Grade Point Average 3.90.",
+                "Qw": "According to this chart, the Year 2022 has the highest Grade Point Average 3.90.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "bar",
+        "image_type": "vertical_single",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/vertical_single/4.png",
+        "data_path": "./data/bar_single/genescloud/4.txt",
+        "data_meta": "./data/bar_single/meta.json",
+        "qa_path": "./QA/Acc+/bar/vertical_single/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of box chart.",
+                "Qw": "This graph is a box chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Number of Visitors of Month 2020 is 1800.00.",
+                "Qw": "According to this chart, the Number of Visitors of Month 2020 is 1500.00.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Number of Visitors of Month 2019 is higher than Month 2016.",
+                "Qw": "According to this chart, the Number of Visitors of Month 2016 is higher than Month 2019.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Month 2022 has the highest Number of Visitors 1900.00.",
+                "Qw": "According to this chart, the Month 2020 has the highest Number of Visitors 1900.00.",
+                "Type": "conception"
+            }
+        }
+    },
+    "5.txt": {
+        "chart_type": "bar",
+        "image_type": "vertical_single",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/vertical_single/5.png",
+        "data_path": "./data/bar_single/genescloud/5.txt",
+        "data_meta": "./data/bar_single/meta.json",
+        "qa_path": "./QA/Acc+/bar/vertical_single/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of line chart.",
+                "Qw": "This graph is a line chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Sales of Region 2018 is 320.00.",
+                "Qw": "According to this chart, the Sales of Region 2018 is 290.00.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Sales of Region 2021 is higher than Region 2017.",
+                "Qw": "According to this chart, the Sales of Region 2017 is higher than Region 2021.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Region 2020 has the highest Sales 340.00.",
+                "Qw": "According to this chart, the Region 2016 has the highest Sales 340.00.",
+                "Type": "conception"
+            }
+        }
+    }
+}

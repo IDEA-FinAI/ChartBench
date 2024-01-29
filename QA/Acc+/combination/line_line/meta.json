@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "combination",
+        "image_type": "line_line",
+        "QA_type": "Acc+",
+        "image_path": "./images/combination/line_line/0.png",
+        "data_path": "./data/line_multi/genescloud/0.txt",
+        "data_meta": "./data/line_multi/meta.json",
+        "qa_path": "./QA/Acc+/combination/line_line/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a combination chart, instead of box chart.",
+                "Qw": "This graph is a box chart, instead of combination chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for India, the Millions of Units Sold value at Years 2015 is around 80.0.",
+                "Qw": "According to this chart, for India, the Millions of Units Sold value at Years 2015 is around 120.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Millions of Units Sold value of India is higher than Brazil at Years 2017.",
+                "Qw": "According to this chart, the Millions of Units Sold value of Brazil is higher than India at Years 2017.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the India has the highest Millions of Units Sold value 220.0 at Years 2022.",
+                "Qw": "According to this chart, the India has the highest Millions of Units Sold value 220.0 at Years 2020.",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "combination",
+        "image_type": "line_line",
+        "QA_type": "Acc+",
+        "image_path": "./images/combination/line_line/1.png",
+        "data_path": "./data/line_multi/genescloud/1.txt",
+        "data_meta": "./data/line_multi/meta.json",
+        "qa_path": "./QA/Acc+/combination/line_line/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a combination chart, instead of pie chart.",
+                "Qw": "This graph is a pie chart, instead of combination chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Renewables, the Quadrillion BTUs value at Years 2020 is around 35.0.",
+                "Qw": "According to this chart, for Renewables, the Quadrillion BTUs value at Years 2020 is around 30.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Quadrillion BTUs value of Renewables is higher than Nuclear at Years 2019.",
+                "Qw": "According to this chart, the Quadrillion BTUs value of Nuclear is higher than Renewables at Years 2019.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Renewables has the highest Quadrillion BTUs value 45.0 at Years 2022.",
+                "Qw": "According to this chart, the Renewables has the highest Quadrillion BTUs value 45.0 at Years 2019.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "combination",
+        "image_type": "line_line",
+        "QA_type": "Acc+",
+        "image_path": "./images/combination/line_line/2.png",
+        "data_path": "./data/line_multi/genescloud/2.txt",
+        "data_meta": "./data/line_multi/meta.json",
+        "qa_path": "./QA/Acc+/combination/line_line/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a combination chart, instead of others chart.",
+                "Qw": "This graph is a others chart, instead of combination chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for Middle East, the Millions of Passengers value at Years 2015 is around 400.0.",
+                "Qw": "According to this chart, for Middle East, the Millions of Passengers value at Years 2015 is around 550.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Millions of Passengers value of North America is higher than Middle East at Years 2020.",
+                "Qw": "According to this chart, the Millions of Passengers value of Middle East is higher than North America at Years 2020.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the North America has the highest Millions of Passengers value 900.0 at Years 2019.",
+                "Qw": "According to this chart, the North America has the highest Millions of Passengers value 900.0 at Years 2020.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "combination",
+        "image_type": "line_line",
+        "QA_type": "Acc+",
+        "image_path": "./images/combination/line_line/3.png",
+        "data_path": "./data/line_multi/genescloud/3.txt",
+        "data_meta": "./data/line_multi/meta.json",
+        "qa_path": "./QA/Acc+/combination/line_line/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a combination chart, instead of others chart.",
+                "Qw": "This graph is a others chart, instead of combination chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for India, the Billion Metric Tons value at Years 2022 is around 6.5.",
+                "Qw": "According to this chart, for India, the Billion Metric Tons value at Years 2022 is around 3.0.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Billion Metric Tons value of India is higher than Russia at Years 2022.",
+                "Qw": "According to this chart, the Billion Metric Tons value of Russia is higher than India at Years 2022.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the India has the highest Billion Metric Tons value 6.5 at Years 2022.",
+                "Qw": "According to this chart, the India has the highest Billion Metric Tons value 6.5 at Years 2017.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "combination",
+        "image_type": "line_line",
+        "QA_type": "Acc+",
+        "image_path": "./images/combination/line_line/4.png",
+        "data_path": "./data/line_multi/genescloud/4.txt",
+        "data_meta": "./data/line_multi/meta.json",
+        "qa_path": "./QA/Acc+/combination/line_line/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a combination chart, instead of radar chart.",
+                "Qw": "This graph is a radar chart, instead of combination chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, for North America, the Billions of Users value at Years 2019 is around 1.3.",
+                "Qw": "According to this chart, for North America, the Billions of Users value at Years 2019 is around 1.6.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Billions of Users value of Europe is higher than North America at Years 2020.",
+                "Qw": "According to this chart, the Billions of Users value of North America is higher than Europe at Years 2020.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Europe has the highest Billions of Users value 2.8 at Years 2022.",
+                "Qw": "According to this chart, the Europe has the highest Billions of Users value 2.8 at Years 2017.",
+                "Type": "conception"
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "pie",
+        "image_type": "ring_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/pie/ring_wi_anno/0.png",
+        "data_path": "./data/pie/genescloud/0.txt",
+        "data_meta": "./data/pie/meta.json",
+        "qa_path": "./QA/Acc+/pie/ring_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a pie chart, instead of radar chart.",
+                "Qw": "This graph is a radar chart, instead of pie chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Percentage of Hip Hop is 15.00%.",
+                "Qw": "According to this chart, the Percentage of Hip Hop is 2.00%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Percentage of Pop is higher than Country.",
+                "Qw": "According to this chart, the Percentage of Country is higher than Pop.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Pop has the highest Percentage 35.00%.",
+                "Qw": "According to this chart, the Rock has the highest Percentage 35.00%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "pie",
+        "image_type": "ring_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/pie/ring_wi_anno/1.png",
+        "data_path": "./data/pie/genescloud/1.txt",
+        "data_meta": "./data/pie/meta.json",
+        "qa_path": "./QA/Acc+/pie/ring_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a pie chart, instead of area chart.",
+                "Qw": "This graph is a area chart, instead of pie chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Percentage of Others is 2.00%.",
+                "Qw": "According to this chart, the Percentage of Others is 35.00%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Percentage of Android is higher than Others.",
+                "Qw": "According to this chart, the Percentage of Others is higher than Android.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Android has the highest Percentage 60.00%.",
+                "Qw": "According to this chart, the Windows has the highest Percentage 60.00%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "pie",
+        "image_type": "ring_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/pie/ring_wi_anno/2.png",
+        "data_path": "./data/pie/genescloud/2.txt",
+        "data_meta": "./data/pie/meta.json",
+        "qa_path": "./QA/Acc+/pie/ring_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a pie chart, instead of area chart.",
+                "Qw": "This graph is a area chart, instead of pie chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Percentage of Vanilla is 28.00%.",
+                "Qw": "According to this chart, the Percentage of Vanilla is 6.00%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Percentage of Chocolate is higher than Other Flavors.",
+                "Qw": "According to this chart, the Percentage of Other Flavors is higher than Chocolate.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Vanilla has the highest Percentage 28.00%.",
+                "Qw": "According to this chart, the Chocolate has the highest Percentage 28.00%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "pie",
+        "image_type": "ring_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/pie/ring_wi_anno/3.png",
+        "data_path": "./data/pie/genescloud/3.txt",
+        "data_meta": "./data/pie/meta.json",
+        "qa_path": "./QA/Acc+/pie/ring_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a pie chart, instead of combination chart.",
+                "Qw": "This graph is a combination chart, instead of pie chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Percentage of Twitter is 15.00%.",
+                "Qw": "According to this chart, the Percentage of Twitter is 40.00%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Percentage of Facebook is higher than LinkedIn.",
+                "Qw": "According to this chart, the Percentage of LinkedIn is higher than Facebook.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Facebook has the highest Percentage 40.00%.",
+                "Qw": "According to this chart, the Instagram has the highest Percentage 40.00%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "pie",
+        "image_type": "ring_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/pie/ring_wi_anno/4.png",
+        "data_path": "./data/pie/genescloud/4.txt",
+        "data_meta": "./data/pie/meta.json",
+        "qa_path": "./QA/Acc+/pie/ring_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a pie chart, instead of bar chart.",
+                "Qw": "This graph is a bar chart, instead of pie chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Percentage of Gluten-Free is 5.00%.",
+                "Qw": "According to this chart, the Percentage of Gluten-Free is 15.00%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Percentage of Vegetarian is higher than Gluten-Free.",
+                "Qw": "According to this chart, the Percentage of Gluten-Free is higher than Vegetarian.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Omnivore has the highest Percentage 35.00%.",
+                "Qw": "According to this chart, the Vegetarian has the highest Percentage 35.00%.",
+                "Type": "conception"
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "node_link",
+        "image_type": "node_link_dir",
+        "QA_type": "Acc+",
+        "image_path": "./images/node_link/node_link_dir/0.png",
+        "data_path": "./data/node_link/genescloud/0.txt",
+        "data_meta": "./data/node_link/meta.json",
+        "qa_path": "./QA/Acc+/node_link/node_link_dir/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a node_link chart, instead of bar chart.",
+                "Qw": "This graph is a bar chart, instead of node_link chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the node User C does not point to node User G.",
+                "Qw": "According to this chart, the node User C points to node User G.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the node User B does not point to node User G.",
+                "Qw": "According to this chart, the node User B points to node User G.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the node User F does not point to node User C.",
+                "Qw": "According to this chart, the node User F points to node User C.",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "node_link",
+        "image_type": "node_link_dir",
+        "QA_type": "Acc+",
+        "image_path": "./images/node_link/node_link_dir/1.png",
+        "data_path": "./data/node_link/genescloud/1.txt",
+        "data_meta": "./data/node_link/meta.json",
+        "qa_path": "./QA/Acc+/node_link/node_link_dir/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a node_link chart, instead of bar chart.",
+                "Qw": "This graph is a bar chart, instead of node_link chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the node Employee D does not point to node Manager 2.",
+                "Qw": "According to this chart, the node Employee D points to node Manager 2.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the node Employee F does not point to node Manager 2.",
+                "Qw": "According to this chart, the node Employee F points to node Manager 2.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the node Employee E does not point to node Manager 1.",
+                "Qw": "According to this chart, the node Employee E points to node Manager 1.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "node_link",
+        "image_type": "node_link_dir",
+        "QA_type": "Acc+",
+        "image_path": "./images/node_link/node_link_dir/2.png",
+        "data_path": "./data/node_link/genescloud/2.txt",
+        "data_meta": "./data/node_link/meta.json",
+        "qa_path": "./QA/Acc+/node_link/node_link_dir/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a node_link chart, instead of others chart.",
+                "Qw": "This graph is a others chart, instead of node_link chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the node Paper C does not point to node Paper F.",
+                "Qw": "According to this chart, the node Paper C points to node Paper F.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the node Paper H does not point to node Paper G.",
+                "Qw": "According to this chart, the node Paper H points to node Paper G.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the node Paper B does not point to node Paper J.",
+                "Qw": "According to this chart, the node Paper B points to node Paper J.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "node_link",
+        "image_type": "node_link_dir",
+        "QA_type": "Acc+",
+        "image_path": "./images/node_link/node_link_dir/3.png",
+        "data_path": "./data/node_link/genescloud/3.txt",
+        "data_meta": "./data/node_link/meta.json",
+        "qa_path": "./QA/Acc+/node_link/node_link_dir/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a node_link chart, instead of pie chart.",
+                "Qw": "This graph is a pie chart, instead of node_link chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the node Contact Us does not point to node Gallery.",
+                "Qw": "According to this chart, the node Contact Us points to node Gallery.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the node FAQ does not point to node Services.",
+                "Qw": "According to this chart, the node FAQ points to node Services.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the node FAQ does not point to node About Us.",
+                "Qw": "According to this chart, the node FAQ points to node About Us.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "node_link",
+        "image_type": "node_link_dir",
+        "QA_type": "Acc+",
+        "image_path": "./images/node_link/node_link_dir/4.png",
+        "data_path": "./data/node_link/genescloud/4.txt",
+        "data_meta": "./data/node_link/meta.json",
+        "qa_path": "./QA/Acc+/node_link/node_link_dir/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a node_link chart, instead of radar chart.",
+                "Qw": "This graph is a radar chart, instead of node_link chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the node Researcher D does not point to node Researcher J.",
+                "Qw": "According to this chart, the node Researcher D points to node Researcher J.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the node Researcher I does not point to node Researcher D.",
+                "Qw": "According to this chart, the node Researcher I points to node Researcher D.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the node Researcher A does not point to node Researcher H.",
+                "Qw": "According to this chart, the node Researcher A points to node Researcher H.",
+                "Type": "conception"
+            }
+        }
+    }
+}

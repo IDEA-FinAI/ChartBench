@@ -1,0 +1,157 @@
+{
+    "1.txt": {
+        "chart_type": "bar",
+        "image_type": "horizontal_percent_stacked",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/horizontal_percent_stacked/1.png",
+        "data_path": "./data/bar_multi/genescloud/1.txt",
+        "data_meta": "./data/bar_multi/meta.json",
+        "qa_path": "./QA/Acc+/bar/horizontal_percent_stacked/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of node_link chart.",
+                "Qw": "This graph is a node_link chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of Indonesia at Year 2020 is 10.38%.",
+                "Qw": "According to this chart, the percentage of Indonesia at Year 2020 is 10.77%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Year 2019, the percentage of Thailand is higher than Malaysia.",
+                "Qw": "According to this chart, at Year 2019, the percentage of Malaysia is higher than Thailand.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Vietnam at Year 2021 has the highest percentage 15.08%.",
+                "Qw": "According to this chart, the Vietnam at Year 2017 has the highest percentage 15.08%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "bar",
+        "image_type": "horizontal_percent_stacked",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/horizontal_percent_stacked/2.png",
+        "data_path": "./data/bar_multi/genescloud/2.txt",
+        "data_meta": "./data/bar_multi/meta.json",
+        "qa_path": "./QA/Acc+/bar/horizontal_percent_stacked/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of scatter chart.",
+                "Qw": "This graph is a scatter chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of 2020 at Country Brazil is 14.35%.",
+                "Qw": "According to this chart, the percentage of 2020 at Country Brazil is 14.66%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Country Pakistan, the percentage of 2021 is higher than 2019.",
+                "Qw": "According to this chart, at Country Pakistan, the percentage of 2019 is higher than 2021.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the 2022 at Country China has the highest percentage 15.41%.",
+                "Qw": "According to this chart, the 2022 at Country USA has the highest percentage 15.41%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "bar",
+        "image_type": "horizontal_percent_stacked",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/horizontal_percent_stacked/3.png",
+        "data_path": "./data/bar_multi/genescloud/3.txt",
+        "data_meta": "./data/bar_multi/meta.json",
+        "qa_path": "./QA/Acc+/bar/horizontal_percent_stacked/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of area chart.",
+                "Qw": "This graph is a area chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of 2016 at Brand Lenovo is 13.26%.",
+                "Qw": "According to this chart, the percentage of 2016 at Brand Lenovo is 5.87%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Brand Lenovo, the percentage of 2022 is higher than 2021.",
+                "Qw": "According to this chart, at Brand Lenovo, the percentage of 2021 is higher than 2022.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the 2022 at Brand Xiaomi has the highest percentage 21.85%.",
+                "Qw": "According to this chart, the 2022 at Brand Vivo has the highest percentage 21.85%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "bar",
+        "image_type": "horizontal_percent_stacked",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/horizontal_percent_stacked/4.png",
+        "data_path": "./data/bar_multi/genescloud/4.txt",
+        "data_meta": "./data/bar_multi/meta.json",
+        "qa_path": "./QA/Acc+/bar/horizontal_percent_stacked/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of node_link chart.",
+                "Qw": "This graph is a node_link chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of Tokyo at Month Jun is 20.69%.",
+                "Qw": "According to this chart, the percentage of Tokyo at Month Jun is 14.95%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Month Jul, the percentage of New York is higher than London.",
+                "Qw": "According to this chart, at Month Jul, the percentage of London is higher than New York.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Sydney at Month Jan has the highest percentage 39.41%.",
+                "Qw": "According to this chart, the Sydney at Month Jun has the highest percentage 39.41%.",
+                "Type": "conception"
+            }
+        }
+    },
+    "5.txt": {
+        "chart_type": "bar",
+        "image_type": "horizontal_percent_stacked",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/horizontal_percent_stacked/5.png",
+        "data_path": "./data/bar_multi/genescloud/5.txt",
+        "data_meta": "./data/bar_multi/meta.json",
+        "qa_path": "./QA/Acc+/bar/horizontal_percent_stacked/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of radar chart.",
+                "Qw": "This graph is a radar chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the percentage of Company D at Quarter Q2 is 26.90%.",
+                "Qw": "According to this chart, the percentage of Company D at Quarter Q2 is 25.90%.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Quarter Q2, the percentage of Company E is higher than Company C.",
+                "Qw": "According to this chart, at Quarter Q2, the percentage of Company C is higher than Company E.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Company D at Quarter Q2 has the highest percentage 26.90%.",
+                "Qw": "According to this chart, the Company D at Quarter Q3 has the highest percentage 26.90%.",
+                "Type": "conception"
+            }
+        }
+    }
+}

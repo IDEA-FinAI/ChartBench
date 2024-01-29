@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "radar",
+        "image_type": "radar_single_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/radar/radar_single_wi_anno/0.png",
+        "data_path": "./data/radar_single/genescloud/0.txt",
+        "data_meta": "./data/radar_single/meta.json",
+        "qa_path": "./QA/Acc+/radar/radar_single_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a radar chart, instead of node_link chart.",
+                "Qw": "This graph is a node_link chart, instead of radar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the value of Problem Solving is 9.20.",
+                "Qw": "According to this chart, the value of Problem Solving is 7.80.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the value of Problem Solving is higher than Leadership.",
+                "Qw": "According to this chart, the value of Leadership is higher than Problem Solving.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Problem Solving has the highest value 9.20.",
+                "Qw": "According to this chart, the Technical Proficiency has the highest value 9.20.",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "radar",
+        "image_type": "radar_single_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/radar/radar_single_wi_anno/1.png",
+        "data_path": "./data/radar_single/genescloud/1.txt",
+        "data_meta": "./data/radar_single/meta.json",
+        "qa_path": "./QA/Acc+/radar/radar_single_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a radar chart, instead of pie chart.",
+                "Qw": "This graph is a pie chart, instead of radar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the value of Agility is 7.90.",
+                "Qw": "According to this chart, the value of Agility is 8.80.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the value of Body Composition is higher than Strength Training.",
+                "Qw": "According to this chart, the value of Strength Training is higher than Body Composition.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Flexibility has the highest value 9.20.",
+                "Qw": "According to this chart, the Agility has the highest value 9.20.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "radar",
+        "image_type": "radar_single_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/radar/radar_single_wi_anno/2.png",
+        "data_path": "./data/radar_single/genescloud/2.txt",
+        "data_meta": "./data/radar_single/meta.json",
+        "qa_path": "./QA/Acc+/radar/radar_single_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a radar chart, instead of pie chart.",
+                "Qw": "This graph is a pie chart, instead of radar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the value of Piano is 9.00.",
+                "Qw": "According to this chart, the value of Piano is 8.50.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the value of Piano is higher than Violin.",
+                "Qw": "According to this chart, the value of Violin is higher than Piano.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Piano has the highest value 9.00.",
+                "Qw": "According to this chart, the Vocal has the highest value 9.00.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "radar",
+        "image_type": "radar_single_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/radar/radar_single_wi_anno/3.png",
+        "data_path": "./data/radar_single/genescloud/3.txt",
+        "data_meta": "./data/radar_single/meta.json",
+        "qa_path": "./QA/Acc+/radar/radar_single_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a radar chart, instead of node_link chart.",
+                "Qw": "This graph is a node_link chart, instead of radar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the value of Social Media Engagement is 9.30.",
+                "Qw": "According to this chart, the value of Social Media Engagement is 7.90.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the value of Website Traffic is higher than Email Click-through Rate.",
+                "Qw": "According to this chart, the value of Email Click-through Rate is higher than Website Traffic.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Social Media Engagement has the highest value 9.30.",
+                "Qw": "According to this chart, the Email Click-through Rate has the highest value 9.30.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "radar",
+        "image_type": "radar_single_wi_anno",
+        "QA_type": "Acc+",
+        "image_path": "./images/radar/radar_single_wi_anno/4.png",
+        "data_path": "./data/radar_single/genescloud/4.txt",
+        "data_meta": "./data/radar_single/meta.json",
+        "qa_path": "./QA/Acc+/radar/radar_single_wi_anno/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a radar chart, instead of box chart.",
+                "Qw": "This graph is a box chart, instead of radar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the value of Carbon Footprint is 7.60.",
+                "Qw": "According to this chart, the value of Carbon Footprint is 8.50.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the value of Water Usage Reduction is higher than Carbon Footprint.",
+                "Qw": "According to this chart, the value of Carbon Footprint is higher than Water Usage Reduction.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Energy Conservation has the highest value 9.10.",
+                "Qw": "According to this chart, the Carbon Footprint has the highest value 9.10.",
+                "Type": "conception"
+            }
+        }
+    }
+}

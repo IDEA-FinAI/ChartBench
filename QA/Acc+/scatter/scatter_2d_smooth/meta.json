@@ -1,0 +1,157 @@
+{
+    "0.txt": {
+        "chart_type": "scatter",
+        "image_type": "scatter_2d_smooth",
+        "QA_type": "Acc+",
+        "image_path": "./images/scatter/scatter_2d_smooth/0.png",
+        "data_path": "./data/scatter_2d/genescloud/0.txt",
+        "data_meta": "./data/scatter_2d/meta.json",
+        "qa_path": "./QA/Acc+/scatter/scatter_2d_smooth/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a scatter chart, instead of radar chart.",
+                "Qw": "This graph is a radar chart, instead of scatter chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Income is 38.00 if Education Level is 10.",
+                "Qw": "According to this chart, the Income is 58.00 if Education Level is 10.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Income is higher at Education Level 12 compared to Education Level 11.",
+                "Qw": "According to this chart, the Income is higher at Education Level 11 compared to Education Level 12.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Income is the highest 60.00 when the Education Level is 16.",
+                "Qw": "According to this chart, the Income is the highest 60.00 when the Education Level is 13.",
+                "Type": "conception"
+            }
+        }
+    },
+    "1.txt": {
+        "chart_type": "scatter",
+        "image_type": "scatter_2d_smooth",
+        "QA_type": "Acc+",
+        "image_path": "./images/scatter/scatter_2d_smooth/1.png",
+        "data_path": "./data/scatter_2d/genescloud/1.txt",
+        "data_meta": "./data/scatter_2d/meta.json",
+        "qa_path": "./QA/Acc+/scatter/scatter_2d_smooth/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a scatter chart, instead of pie chart.",
+                "Qw": "This graph is a pie chart, instead of scatter chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Ice Cream Sales is 11.00 if Temperature is 27.",
+                "Qw": "According to this chart, the Ice Cream Sales is 10.00 if Temperature is 27.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Ice Cream Sales is higher at Temperature 26 compared to Temperature 23.",
+                "Qw": "According to this chart, the Ice Cream Sales is higher at Temperature 23 compared to Temperature 26.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Ice Cream Sales is the highest 14.00 when the Temperature is 31.",
+                "Qw": "According to this chart, the Ice Cream Sales is the highest 14.00 when the Temperature is 22.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "scatter",
+        "image_type": "scatter_2d_smooth",
+        "QA_type": "Acc+",
+        "image_path": "./images/scatter/scatter_2d_smooth/2.png",
+        "data_path": "./data/scatter_2d/genescloud/2.txt",
+        "data_meta": "./data/scatter_2d/meta.json",
+        "qa_path": "./QA/Acc+/scatter/scatter_2d_smooth/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a scatter chart, instead of box chart.",
+                "Qw": "This graph is a box chart, instead of scatter chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Weight Loss is 1.50 if Exercise Duration is 20.",
+                "Qw": "According to this chart, the Weight Loss is 4.20 if Exercise Duration is 20.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Weight Loss is higher at Exercise Duration 45 compared to Exercise Duration 30.",
+                "Qw": "According to this chart, the Weight Loss is higher at Exercise Duration 30 compared to Exercise Duration 45.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Weight Loss is the highest 4.50 when the Exercise Duration is 55.",
+                "Qw": "According to this chart, the Weight Loss is the highest 4.50 when the Exercise Duration is 15.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "scatter",
+        "image_type": "scatter_2d_smooth",
+        "QA_type": "Acc+",
+        "image_path": "./images/scatter/scatter_2d_smooth/3.png",
+        "data_path": "./data/scatter_2d/genescloud/3.txt",
+        "data_meta": "./data/scatter_2d/meta.json",
+        "qa_path": "./QA/Acc+/scatter/scatter_2d_smooth/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a scatter chart, instead of pie chart.",
+                "Qw": "This graph is a pie chart, instead of scatter chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Exam Scores is 75.00 if Study Time is 6.",
+                "Qw": "According to this chart, the Exam Scores is 60.00 if Study Time is 6.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Exam Scores is higher at Study Time 8 compared to Study Time 7.",
+                "Qw": "According to this chart, the Exam Scores is higher at Study Time 7 compared to Study Time 8.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Exam Scores is the highest 90.00 when the Study Time is 9.",
+                "Qw": "According to this chart, the Exam Scores is the highest 90.00 when the Study Time is 6.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "scatter",
+        "image_type": "scatter_2d_smooth",
+        "QA_type": "Acc+",
+        "image_path": "./images/scatter/scatter_2d_smooth/4.png",
+        "data_path": "./data/scatter_2d/genescloud/4.txt",
+        "data_meta": "./data/scatter_2d/meta.json",
+        "qa_path": "./QA/Acc+/scatter/scatter_2d_smooth/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a scatter chart, instead of others chart.",
+                "Qw": "This graph is a others chart, instead of scatter chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Fuel Consumption is 10.40 if Distance Traveled is 130.",
+                "Qw": "According to this chart, the Fuel Consumption is 6.40 if Distance Traveled is 130.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, the Fuel Consumption is higher at Distance Traveled 130 compared to Distance Traveled 80.",
+                "Qw": "According to this chart, the Fuel Consumption is higher at Distance Traveled 80 compared to Distance Traveled 130.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Fuel Consumption is the highest 12.00 when the Distance Traveled is 150.",
+                "Qw": "According to this chart, the Fuel Consumption is the highest 12.00 when the Distance Traveled is 90.",
+                "Type": "conception"
+            }
+        }
+    }
+}

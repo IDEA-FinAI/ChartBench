@@ -1,0 +1,157 @@
+{
+    "1.txt": {
+        "chart_type": "bar",
+        "image_type": "horizontal_stacked",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/horizontal_stacked/1.png",
+        "data_path": "./data/bar_multi/genescloud/1.txt",
+        "data_meta": "./data/bar_multi/meta.json",
+        "qa_path": "./QA/Acc+/bar/horizontal_stacked/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of combination chart.",
+                "Qw": "This graph is a combination chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Growth Rate of Vietnam at Year 2017 is 6.10.",
+                "Qw": "According to this chart, the Growth Rate of Vietnam at Year 2017 is 3.80.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Year 2017, the Growth Rate of Vietnam is higher than Malaysia.",
+                "Qw": "According to this chart, at Year 2017, the Growth Rate of Malaysia is higher than Vietnam.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Vietnam at Year 2016 has the highest Growth Rate 6.80.",
+                "Qw": "According to this chart, the Vietnam at Year 2019 has the highest Growth Rate 6.80.",
+                "Type": "conception"
+            }
+        }
+    },
+    "2.txt": {
+        "chart_type": "bar",
+        "image_type": "horizontal_stacked",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/horizontal_stacked/2.png",
+        "data_path": "./data/bar_multi/genescloud/2.txt",
+        "data_meta": "./data/bar_multi/meta.json",
+        "qa_path": "./QA/Acc+/bar/horizontal_stacked/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of area chart.",
+                "Qw": "This graph is a area chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Population of 2018 at Country USA is 32.50.",
+                "Qw": "According to this chart, the Population of 2018 at Country USA is 22.40.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Country Pakistan, the Population of 2020 is higher than 2016.",
+                "Qw": "According to this chart, at Country Pakistan, the Population of 2016 is higher than 2020.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the 2022 at Country China has the highest Population 164.70.",
+                "Qw": "According to this chart, the 2022 at Country Indonesia has the highest Population 164.70.",
+                "Type": "conception"
+            }
+        }
+    },
+    "3.txt": {
+        "chart_type": "bar",
+        "image_type": "horizontal_stacked",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/horizontal_stacked/3.png",
+        "data_path": "./data/bar_multi/genescloud/3.txt",
+        "data_meta": "./data/bar_multi/meta.json",
+        "qa_path": "./QA/Acc+/bar/horizontal_stacked/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of radar chart.",
+                "Qw": "This graph is a radar chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Revenue of 2018 at Brand Huawei is 105.20.",
+                "Qw": "According to this chart, the Revenue of 2018 at Brand Huawei is 51.00.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Brand Samsung, the Revenue of 2018 is higher than 2016.",
+                "Qw": "According to this chart, at Brand Samsung, the Revenue of 2016 is higher than 2018.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the 2022 at Brand Apple has the highest Revenue 294.10.",
+                "Qw": "According to this chart, the 2022 at Brand Xiaomi has the highest Revenue 294.10.",
+                "Type": "conception"
+            }
+        }
+    },
+    "4.txt": {
+        "chart_type": "bar",
+        "image_type": "horizontal_stacked",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/horizontal_stacked/4.png",
+        "data_path": "./data/bar_multi/genescloud/4.txt",
+        "data_meta": "./data/bar_multi/meta.json",
+        "qa_path": "./QA/Acc+/bar/horizontal_stacked/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of combination chart.",
+                "Qw": "This graph is a combination chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Temperature of London at Month Dec is 6.10.",
+                "Qw": "According to this chart, the Temperature of London at Month Dec is 19.10.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Month Nov, the Temperature of Sydney is higher than New York.",
+                "Qw": "According to this chart, at Month Nov, the Temperature of New York is higher than Sydney.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Mumbai at Month May has the highest Temperature 29.70.",
+                "Qw": "According to this chart, the Mumbai at Month Jul has the highest Temperature 29.70.",
+                "Type": "conception"
+            }
+        }
+    },
+    "5.txt": {
+        "chart_type": "bar",
+        "image_type": "horizontal_stacked",
+        "QA_type": "Acc+",
+        "image_path": "./images/bar/horizontal_stacked/5.png",
+        "data_path": "./data/bar_multi/genescloud/5.txt",
+        "data_meta": "./data/bar_multi/meta.json",
+        "qa_path": "./QA/Acc+/bar/horizontal_stacked/meta.json",
+        "QA": {
+            "chart_type": {
+                "Qr": "This graph is a bar chart, instead of area chart.",
+                "Qw": "This graph is a area chart, instead of bar chart.",
+                "Type": "perception"
+            },
+            "chart_number": {
+                "Qr": "According to this chart, the Sales of Company E at Quarter Q1 is 9.90.",
+                "Qw": "According to this chart, the Sales of Company E at Quarter Q1 is 11.30.",
+                "Type": "perception"
+            },
+            "number_compare": {
+                "Qr": "According to this chart, at Quarter Q4, the Sales of Company A is higher than Company C.",
+                "Qw": "According to this chart, at Quarter Q4, the Sales of Company C is higher than Company A.",
+                "Type": "conception"
+            },
+            "high_number": {
+                "Qr": "According to this chart, the Company D at Quarter Q4 has the highest Sales 15.90.",
+                "Qw": "According to this chart, the Company D at Quarter Q1 has the highest Sales 15.90.",
+                "Type": "conception"
+            }
+        }
+    }
+}
