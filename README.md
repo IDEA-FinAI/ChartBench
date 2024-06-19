@@ -1,6 +1,6 @@
 # ChartBench: A Benchmark for Complex Visual Reasoning in Charts
 
-<a href='https://arxiv.org/abs/2312.15915'><img src='https://img.shields.io/badge/arXiv-2312.15915-b31b1b.svg'></a> <a href='https://github.com/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='https://github.com/buaacyw/GaussianEditor/blob/master/LICENSE.txt'><img src='https://img.shields.io/badge/License-MIT-blue'></a> [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/SincereX/ChartBench-Demo)
+<a href='https://arxiv.org/abs/2312.15915'><img src='https://img.shields.io/badge/arXiv-2312.15915-b31b1b.svg'></a> <a href='https://github.com/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='https://github.com/buaacyw/GaussianEditor/blob/master/LICENSE.txt'><img src='https://img.shields.io/badge/License-MIT-blue'></a> [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/SincereX/ChartBench)
 
 
 ## Introduction
@@ -15,8 +15,15 @@ We collect a larger set of unlabeled charts to emphasize the MLLM's ability to i
 ![Chart distributions and ChartCoT.](./asset/contribution.png)
 
 
+## HERE
+- infer_test_answers.py
+- gpt_filter_nqa_answer.py
+- stat_all_metric.py
+
+
+
 ## Todo
-- [ ] Open source all data of ChartBench.
+- [x] Open source all data of ChartBench.
 - [x] Open source the evaluate scripts.
 - [x] Open source the inference scripts.
 - [x] Open source the demo data (10%).
@@ -49,9 +56,7 @@ Please follow the official repository instructions below to set up the local env
 
 ## Ranking
 
-
 ![ChartBench Pipeline.](./asset/Acc+Rank.png)
-
 
 ## Citation
 
