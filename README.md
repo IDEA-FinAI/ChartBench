@@ -20,6 +20,7 @@ We collect a larger set of unlabeled charts to emphasize the MLLM's ability to i
 
 
 ## Todo
+- [ ] Open source: SFT internlmv2 CKPT.
 - [ ] Open source: all evaluation results.
 - [x] Open source: all data of ChartBench.
 - [x] Open source: the evaluate scripts.
