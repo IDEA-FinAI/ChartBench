@@ -150,8 +150,12 @@ def eval_all_metric_in_chartbench(results):
         if item["type"]["QA"] == 'GPT-acc':
             if isinstance(item['conversation'][0]['label'], str):
                 item['conversation'][0]['label'] = [item['conversation'][0]['label']]
+            if 'gpt_filter' in item['conversation'][0].keys():
+                eval_answer = item['conversation'][0]['gpt_filter']
+            else:
+                eval_answer = item['conversation'][0]['answer']
             nqa = max([
-                    relaxed_correctness(item['conversation'][0]['answer'].strip(), ann)
+                    relaxed_correctness(eval_answer.strip(), ann)
                     for ann in item['conversation'][0]['label']
             ])
             update_nqa(metrics, 'all', nqa)
