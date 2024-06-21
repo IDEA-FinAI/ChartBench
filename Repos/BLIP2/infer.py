@@ -6,11 +6,12 @@ from PIL import Image
 from transformers import Blip2Processor, Blip2ForConditionalGeneration
 from utils import sys_prompt, ChartBenchTester
 
-CKPT_PATH = '/data/FinAi_Mapping_Knowledge/qiyiyan/models/blip2-flan-t5-xxl'
-TEST_INDEX = '/Users/sincerexu/Desktop/ChartBench/test.jsonl'
-SAVE_PATH = '/Users/sincerexu/Desktop/ChartBench/Result/raw/BLIP2.jsonl'
+CKPT_PATH = '/path/to/models/blip2-flan-t5-xxl'
+TEST_INDEX = '/path/to/ChartBench/test.jsonl'
+SAVE_PATH = '/path/to/ChartBench/Result/raw/BLIP2.jsonl'
 
 class CustomChartBenchTester(ChartBenchTester):
+    
     def load_model(self):
         processor = Blip2Processor.from_pretrained(CKPT_PATH)
         model = Blip2ForConditionalGeneration.from_pretrained(CKPT_PATH, torch_dtype=torch.float16, device_map='cuda')
@@ -30,4 +31,5 @@ if __name__ == '__main__':
         sys_prompt_acc=sys_prompt['blip2 style'],
         sys_prompt_nqa=sys_prompt['chartqa']
     )
+    tester.load_model()
     tester.infer_all_answers(SAVE_PATH)
