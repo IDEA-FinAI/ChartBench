@@ -15,13 +15,6 @@ We collect a larger set of unlabeled charts to emphasize the MLLM's ability to i
 ![Chart distributions and ChartCoT.](./asset/contribution.png)
 
 
-## HERE
-- infer_test_answers.py
-- gpt_filter_nqa_answer.py
-- stat_all_metric.py
-
-
-
 ## Todo
 - [x] Open source all data of ChartBench.
 - [x] Open source the evaluate scripts.
