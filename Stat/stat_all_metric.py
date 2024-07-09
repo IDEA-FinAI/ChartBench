@@ -217,5 +217,5 @@ def show_final_table(stat_paths):
 
 
 if __name__ == '__main__':
-    stat_paths = ['/Users/sincerexu/Desktop/ChartBench/Result/raw/BLIP2.jsonl']
+    stat_paths = ['/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/InternLM-XComposer-v2.jsonl']
     show_final_table(stat_paths)

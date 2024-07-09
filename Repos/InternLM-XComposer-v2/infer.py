@@ -7,9 +7,9 @@ from PIL import Image
 from transformers import AutoModelForCausalLM, AutoTokenizer  
 from utils import sys_prompt, ChartBenchTester
 
-CKPT_PATH = '/path/to/models/internlm-xcomposer2-vl-7b'
-TEST_INDEX = '/path/to/ChartBench/test.jsonl'
-SAVE_PATH = '/path/to/ChartBench/Result/raw/InternLM-XComposer-v2.jsonl'
+CKPT_PATH = '/data/FinAi_Mapping_Knowledge/qiyiyan/models/internlm-xcomposer2-vl-7b'
+TEST_INDEX = '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/test.jsonl'
+SAVE_PATH = '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/InternLM-XComposer-v2.jsonl'
 
 def __padding__(image):
     width, height = image.size
@@ -29,8 +29,9 @@ class CustomChartBenchTester(ChartBenchTester):
         model.tokenizer = tokenizer
         self.model = model.eval()
         self.tokenizer = tokenizer
-        
+
     def model_gen(self, question, im_path):
+        im_path = os.path.join('/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/', im_path)
         padding = False
         need_bos = True
         pt1 = 0

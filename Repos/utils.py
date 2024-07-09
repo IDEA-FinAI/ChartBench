@@ -1,6 +1,5 @@
-import os
-import sys
-import json
+import os, sys, json
+import torch
 from tqdm import tqdm
 
 class ChartBenchTester:
@@ -50,14 +49,16 @@ class ChartBenchTester:
             if samples[i]["type"]["QA"] == "Acc+":
                 Qr = self.system_prompt_acc.format(samples[i]["conversation"][0]["query"])
                 Qw = self.system_prompt_acc.format(samples[i]["conversation"][1]["query"])
-                Ar = self.model_gen(Qr, im_path)
-                Aw = self.model_gen(Qw, im_path)
+                with torch.cuda.amp.autocast():
+                    Ar = self.model_gen(Qr, im_path)
+                    Aw = self.model_gen(Qw, im_path)
                 samples[i]["conversation"][0]["answer"] = Ar
                 samples[i]["conversation"][1]["answer"] = Aw
 
             if samples[i]["type"]["QA"] == "GPT-acc":
                 Qr = self.system_prompt_nqa.format(samples[i]["conversation"][0]["query"])
-                Ar = self.model_gen(Qr, im_path)
+                with torch.cuda.amp.autocast():
+                    Ar = self.model_gen(Qr, im_path)
                 samples[i]["conversation"][0]["answer"] = Ar
 
             self.save_jsonl(output_path, [samples[i]], mode='a+')
@@ -111,7 +112,7 @@ Combined with your answers, please provide a simple 'Yes' or 'No' response witho
 Your Answer:
 '''
 
-chartqa_v1 = 'user\nAnswer the question using a single word or phrase.{}\nassistant\n'
+chartqa_v1 = 'user:\nAnswer the question using a single word or phrase. {}\nassistant:\n'
 
 sys_prompt = {
     'blip2 style': prompt_v1,
