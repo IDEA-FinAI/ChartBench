@@ -1,0 +1,1386 @@
+{
+    "area": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the {y_label} of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {legend} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "area_percent": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {legend} at {x_label} {x_meta} is around {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the percentage of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest percentage {y_meta}%.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest percentage {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the percentage of {legend} at {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "area_stack": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the {y_label} of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {legend} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "horizontal_multi": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the {y_label} of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {legend} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "horizontal_stacked": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the {y_label} of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {legend} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "vertical_multi": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the {y_label} of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {legend} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "vertical_stacked": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the {y_label} of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {legend} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "threeD_stacked": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the {y_label} of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {legend} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "threeD_bar_multi": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the {y_label} of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {legend} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "vertical_percent_stacked": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {legend} at {x_label} {x_meta} is around {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the percentage of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest percentage {y_meta}%.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest percentage {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the percentage of {legend} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "horizontal_percent_stacked": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {legend} at {x_label} {x_meta} is around {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the percentage of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest percentage {y_meta}%.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest percentage {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the percentage of {legend} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "threeD_percent_stacked": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {legend} at {x_label} {x_meta} is around {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, at {x_label} {x_meta}, the percentage of {legend_1} is higher than {legend_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the highest percentage {y_meta}%.",
+                "According to this {image_type} chart, the {legend} at {x_label} {x_meta} has the lowest percentage {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the percentage of {legend} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "horizontal_single": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_mete_1} is higher than {x_label} {x_mete_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "horizontal_single_wi_anno": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta} is {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_mete_1} is higher than {x_label} {x_mete_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "vertical_single": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_mete_1} is higher than {x_label} {x_mete_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "vertical_single_wi_anno": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta} is {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_mete_1} is higher than {x_label} {x_mete_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest {y_label} {y_meta}.",
+                "According to this {image_type} chart, the {x_label} {x_meta} has the lowest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "box_h": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the medium {y_label} number of {x_label} {x_meta} is around {y_meta}.",
+                "According to this {image_type} chart, the highest {y_label} number of {x_label} {x_meta} is around {y_meta}.",
+                "According to this {image_type} chart, the lowest {y_label} number of {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the medium {y_label} number of {x_label} {x_meta_1} is higher than {x_meta_2}.",
+                "According to this {image_type} chart, the highest {y_label} number of {x_label} {x_meta_1} is higher than {x_meta_2}.",
+                "According to this {image_type} chart, the lowest {y_label} number of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest medium {y_label} number {y_meta}.",
+                "According to this {image_type} chart, the {x_label} {x_meta} has the lowest medium {y_label} number {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the medium {y_label} number of {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "box_v": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the medium {y_label} number of {x_label} {x_meta} is around {y_meta}.",
+                "According to this {image_type} chart, the highest {y_label} number of {x_label} {x_meta} is around {y_meta}.",
+                "According to this {image_type} chart, the lowest {y_label} number of {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the medium {y_label} number of {x_label} {x_meta_1} is higher than {x_meta_2}.",
+                "According to this {image_type} chart, the highest {y_label} number of {x_label} {x_meta_1} is higher than {x_meta_2}.",
+                "According to this {image_type} chart, the lowest {y_label} number of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest medium {y_label} number {y_meta}.",
+                "According to this {image_type} chart, the {x_label} {x_meta} has the lowest medium {y_label} number {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the medium {y_label} number of {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "stock": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the lastest opening price of day {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the lastest closing price of day {x_meta_1} is higher than {x_meta_2}.",
+                "According to this {image_type} chart, the opening price of day {x_meta_1} is higher than {x_meta_2}.",
+                "According to this {image_type} chart, the trading volume of day {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the day {x_meta} has the highest trading volume {y_meta}.",
+                "According to this {image_type} chart, the day {x_meta} has the highest opening price {y_meta}.",
+                "According to this {image_type} chart, the day {x_meta} has the highest closing price {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the trading volume of day {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "bar_line": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, for {legend}, the {y_label} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend_1} is higher than {legend_2} at {x_label} {xmeta}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} has the highest {y_label} {y_meta} at {x_label} {x_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, for {legend}, what is the {y_label} at {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "line_line": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, for {legend}, the {y_label} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend_1} is higher than {legend_2} at {x_label} {xmeta}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} has the highest {y_label} {y_meta} at {x_label} {x_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, for {legend}, what is the {y_label} at {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "pie_pie": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta} is {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {legend_1} is higher than {legend_2} at {x_label} {xmeta}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} has the highest percentage {y_meta}% at {x_label} {x_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, for {legend}, what is the percentage at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "pie_bar": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta} is {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {legend_1} is higher than {legend_2} at {x_label} {x_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} has the highest percentage {y_meta}% at {x_label} {x_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, for {legend}, what is the percentage at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "InteSun": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta} is around {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_meta} has the highest percentage {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the percentage of {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "line_err": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, for {legned}, the mean value of {y_label} at {x_label} {x_meta} is around {y_meta}.",
+                "According to this {image_type} chart, for {legned}, the upper bound of {y_label} at {x_label} {x_meta} is around {y_meta}.",
+                "According to this {image_type} chart, for {legned}, the lower bound of {y_label} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} standard deviation of {legend_1} is higher than {legend_2} at {x_label} {x_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} has the highest mean {y_label} {y_meta} at {x_label} {x_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, for {legned}, what is the mean value of {y_label} at {x_label} {x_meta} around?",
+                "According to this {image_type} chart, for {legned}, what is the upper bound of {y_label} at {x_label} {x_meta} around?",
+                "According to this {image_type} chart, for {legned}, what is the lower bound of {y_label} at {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "line_multi": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, for {legned}, the {y_label} at {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend_1} is higher than {legend_2} at {x_label} {x_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} has the highest {y_label} {y_meta} at {x_label} {x_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, for {legned}, what is the {y_label} around at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "line_multi_wi_anno": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, for {legned}, the {y_label} at {x_label} {x_meta} is {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {legend_1} is higher than {legend_2} at {x_label} {x_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {legend} has the highest {y_label} {y_meta} at {x_label} {x_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, for {legned}, what is the {y_label} at {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "line_single_wi_anno": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta} is {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "line_single": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "node_link_dir": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the node {node_1} points to node {node_2}.",
+                "According to this {image_type} chart, the node {node_1} does not point to node {node_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the node {node_1} points to node {node_2}.",
+                "According to this {image_type} chart, the node {node_1} does not point to node {node_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the node {node_1} points to node {node_2}.",
+                "According to this {image_type} chart, the node {node_1} does not point to node {node_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, the node {node_1} points to {node_2}, yes or no?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "node_link_undir": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the node {node_1} connects to node {node_2}.",
+                "According to this {image_type} chart, the node {node_1} does not connect to node {node_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the node {node_1} connects to node {node_2}.",
+                "According to this {image_type} chart, the node {node_1} does not connect to node {node_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the node {node_1} connects to node {node_2}.",
+                "According to this {image_type} chart, the node {node_1} does not connect to node {node_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, the node {node_1} connects to {node_2}, yes or no?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "pie": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta} is around {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest percentage {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the percentage of {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "ring_wi_anno": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta} is {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest percentage {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the percentage of {x_label} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "ring": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta} is around {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest percentage {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the percentage of {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "sector": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta} is around {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the percentage of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest percentage {y_meta}%."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the percentage of {x_label} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "radar_multi": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, for group {legend}, the {y_label} of {x_lable} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, for group {legend}, the {y_label} of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} of group {legend} has the highest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, for group {legend}, what is the {y_label} of {x_lable} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "radar_multi_fill": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, for group {legend}, the {y_label} of {x_lable} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, for group {legend}, the {y_label} of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} of group {legend} has the highest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, for group {legend}, what is the {y_label} of {x_lable} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "radar_single": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_lable} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {x_lable} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "radar_single_wi_anno": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_lable} {x_meta} is {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {x_lable} {x_meta}?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "scatter_2d": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_lable} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {x_lable} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "scatter_2d_smooth": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_lable} {x_meta} is around {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, the {y_label} of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {x_lable} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    },
+    "scatter_3d": {
+        "CR": {
+            "Query": [
+                "This graph is a {chart_type_1} chart, instead of {chart_type_2} chart."
+            ],
+            "Type": "Acc+"
+        },
+        "VE": {
+            "Query": [
+                "According to this {image_type} chart, if the radius of the circle indicates {z_label}, for {x_label} {x_meta}, the {z_label} is around {z_meta} when the {y_label} = {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "VC": {
+            "Query": [
+                "According to this {image_type} chart, if the radius of the circle indicates {z_label}, the {z_label} of {x_label} {x_meta_1} is higher than {x_meta_2}."
+            ],
+            "Type": "Acc+"
+        },
+        "GC": {
+            "Query": [
+                "According to this {image_type} chart, the {x_label} {x_meta} has the highest {y_label} {y_meta}."
+            ],
+            "Type": "Acc+"
+        },
+        "NQA": {
+            "Query": [
+                "According to this {image_type} chart, what is the {y_label} of {x_lable} {x_meta} around?"
+            ],
+            "Type": "GPT-acc"
+        }
+    }
+}

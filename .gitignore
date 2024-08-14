@@ -1,3 +1,10 @@
 data/*
 Result/*
 .vscode
+*.log
+*.pyc
+./Repos/Ours/*
+Stat/Paper_Table/*
+Stat/Paper_Table_backup/*
+Stat/play.py
+test_toy.jsonl

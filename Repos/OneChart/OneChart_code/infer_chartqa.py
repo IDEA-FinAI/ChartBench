@@ -1,6 +1,6 @@
 import os
 import sys, copy
-sys.path.append('../../')
+
 import json
 import numpy as np
 import re
@@ -25,7 +25,9 @@ from llava.model.builder import load_pretrained_model
 # from llava.utils import disable_torch_init
 from llava.mm_utils import process_images, tokenizer_image_token, get_model_name_from_path, KeywordsStoppingCriteria
 
-from utils import sys_prompt, ChartBenchTester
+import sys
+sys.path.append('/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartQA/Repos')
+from utils import ChartQATester, evaluate_relaxed_accuracy
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -36,9 +38,7 @@ DEFAULT_IM_END_TOKEN = '</img>'
 
 CKPT_PATH = '/data/FinAi_Mapping_Knowledge/qiyiyan/models/OneChart'
 LLM_PATH = '/data/FinAi_Mapping_Knowledge/qiyiyan/models/llava-v1.6-vicuna-13b'
-TEST_INDEX = '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/test.jsonl'
-SAVE_PATH = '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/OneChart.jsonl'
-IMG_ROOT = '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/data'
+SAVE_PATH = '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartQA/Result/OneChart'
 
 def list_json_value(json_dict):
     rst_str = []
@@ -77,7 +77,7 @@ def norm_(rst_list):
     normalized_tensor = (rst_list - min_vals) / (max_vals - min_vals + 1e-9)
     return list(normalized_tensor)
 
-class CustomChartBenchTester(ChartBenchTester):
+class CustomChartQATester(ChartQATester):
     
     def load_model(self):
         disable_torch_init()
@@ -141,7 +141,7 @@ class CustomChartBenchTester(ChartBenchTester):
                 # streamer=streamer,
                 max_new_tokens=1024,
                 stopping_criteria=[stopping_criteria]
-        )
+            )
         input_token_len = input_ids.shape[1]
         outputs = self.tokenizer.batch_decode(output_ids[:, input_token_len:], skip_special_tokens=True)[0]
         outputs = outputs.strip()
@@ -175,7 +175,7 @@ class CustomChartBenchTester(ChartBenchTester):
             # print("This prediction may be has error! ")
         return outputs, reliable_distence, is_reliable
 
-    def model_gen(self, question, im_path):
+    def model_gen(self, question, im_path, py_dict):
 
         conv = conv_templates[self.llava_conv_mode].copy()
         if "mpt" in self.model_name.lower():
@@ -220,54 +220,67 @@ class CustomChartBenchTester(ChartBenchTester):
 
     def infer_all_answers(self, output_path):
 
-        directory = os.path.dirname(output_path)
-        os.makedirs(directory, exist_ok=True)
-        samples = self.load_jsonl(self.test_index, mode='r')
+        os.makedirs(output_path, exist_ok=True)
+        print("Result will be saved at:")
+        print(output_path)
         
-        if os.path.exists(output_path): # ckpt
-            ckpt_index = len(self.load_jsonl(output_path, mode='r'))
-            print(f'Start from sample {ckpt_index} ...')
-        else:
-            ckpt_index = -1
-            
         hint = 'The key information in the chart has been extracted as below:\n{}\n'
         
-        for i in tqdm(range(len(samples))):
-            
-            if samples[i]['id'] < ckpt_index: continue
-            
-            im_path = samples[i]["image"].replace('./data', self.image_root)
-            if samples[i]["type"]["QA"] == "Acc+":
-                Qr = self.system_prompt_acc.format(samples[i]["conversation"][0]["query"])
-                Qw = self.system_prompt_acc.format(samples[i]["conversation"][1]["query"])
-                py_dict, _, _ = self.get_pydict(im_path)
-                Qr = hint.format(py_dict) + Qr
-                Qw = hint.format(py_dict) + Qw
-                with torch.cuda.amp.autocast():
-                    Ar = self.model_gen(Qr, im_path, py_dict)
-                    Aw = self.model_gen(Qw, im_path, py_dict)
-                samples[i]["conversation"][0]["query"] = Qr
-                samples[i]["conversation"][1]["query"] = Qw
-                samples[i]["conversation"][0]["answer"] = Ar
-                samples[i]["conversation"][1]["answer"] = Aw
+        part_acc = []
+        for part_name in ['human', 'augmented']:
+            part_json = os.path.join(output_path, f"{part_name}.json")
+            if os.path.exists(part_json):
+                print(f"Load result from: {part_json}")
+                part = json.load(open(part_json, 'r'))
+            else:
+                part = []
+                samples = json.load(open(self.root+f'test/test_{part_name}.json')) 
+                for q in tqdm(samples):
+                    im_path = self.root + 'test/png/'+q['imgname']
+                    py_dict, _, _ = self.get_pydict(im_path)
+                    text = hint.format(py_dict) + self.system_prompt.format(q['query'])
+                    with torch.cuda.amp.autocast():
+                        response = self.model_gen(text, im_path, py_dict)
+                        # response = self.model_gen(text, im_path)  
+                    part.append({
+                        'image': im_path,
+                        'query': text,
+                        'answer': response,
+                        'annotation': q['label'] 
+                    }) 
+                with open(part_json, 'w') as f:
+                    json.dump(part, f, indent=4)
+            part_acc.append(part)
+        
+        from prettytable import PrettyTable
+        table = PrettyTable()
+        table.field_names = ["@AP", "0.05", "0.1", "0.2"]  
+        human_row = ["Human"]
+        augmented_row = ["Augmented"]
+        averaged_row = ["Averaged"]
+        for ap in [0.05, 0.1, 0.2]:
+            part_acc_ap = [evaluate_relaxed_accuracy(p, self.metric, ap) for p in part_acc]
+            human_acc = part_acc_ap[0]
+            augmented_acc = part_acc_ap[1]
+            averaged_acc = (human_acc + augmented_acc) / 2
+            human_row.append(human_acc)
+            augmented_row.append(augmented_acc)
+            averaged_row.append(averaged_acc)
+     
+        table.add_row(human_row)
+        table.add_row(augmented_row)
+        table.add_row(averaged_row)
 
-            if samples[i]["type"]["QA"] == "GPT-acc":
-                Qr = self.system_prompt_nqa.format(samples[i]["conversation"][0]["query"])
-                py_dict, _, _ = self.get_pydict(im_path)
-                Qr = hint.format(py_dict) + Qr
-                with torch.cuda.amp.autocast():
-                    Ar = self.model_gen(Qr, im_path, py_dict)
-                samples[i]["conversation"][0]["query"] = Qr
-                samples[i]["conversation"][0]["answer"] = Ar
+        table_path = os.path.join(output_path, 'table.txt')
+        with open(table_path, 'w') as f:
+            f.write(str(table))
 
-            self.save_jsonl(output_path, [samples[i]], mode='a+')
-            
+        print(table)
+
+  
 if __name__ == '__main__':
-    tester = CustomChartBenchTester(
-        test_index=TEST_INDEX,
-        sys_prompt_acc=sys_prompt['blip2 style'],
-        sys_prompt_nqa=sys_prompt['chartqa']
-    )
+    tester = CustomChartQATester()
     tester.load_model()
-    tester.reset_image_root(IMG_ROOT)
+    tester.reset_prompt("Answer the question using a single word or phrase. {}")
+    # tester.reset_metric("relaxed_acc_xzz")
     tester.infer_all_answers(SAVE_PATH)

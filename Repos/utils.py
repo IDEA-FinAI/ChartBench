@@ -8,13 +8,21 @@ class ChartBenchTester:
         self.test_index = test_index
         self.system_prompt_acc = sys_prompt_acc
         self.system_prompt_nqa = sys_prompt_nqa
+        self.image_root = ''
         
     def load_model(self):
         pass
         
     def model_gen(self, question, im_path):
         pass
-
+    
+    def reset_image_root(self, p):
+        self.image_root = p
+        
+    def reset_prompt(self, pacc, pnqa):
+        self.system_prompt_acc = pacc
+        self.system_prompt_nqa = pnqa
+        
     def load_jsonl(self, file_path, mode='r'):
         data = []
         with open(file_path, mode) as f:
@@ -45,13 +53,15 @@ class ChartBenchTester:
             
             if samples[i]['id'] < ckpt_index: continue
             
-            im_path = samples[i]["image"]
+            im_path = samples[i]["image"].replace('./data', self.image_root)
             if samples[i]["type"]["QA"] == "Acc+":
                 Qr = self.system_prompt_acc.format(samples[i]["conversation"][0]["query"])
                 Qw = self.system_prompt_acc.format(samples[i]["conversation"][1]["query"])
                 with torch.cuda.amp.autocast():
                     Ar = self.model_gen(Qr, im_path)
                     Aw = self.model_gen(Qw, im_path)
+                samples[i]["conversation"][0]["query"] = Qr
+                samples[i]["conversation"][1]["query"] = Qw
                 samples[i]["conversation"][0]["answer"] = Ar
                 samples[i]["conversation"][1]["answer"] = Aw
 
@@ -59,13 +69,14 @@ class ChartBenchTester:
                 Qr = self.system_prompt_nqa.format(samples[i]["conversation"][0]["query"])
                 with torch.cuda.amp.autocast():
                     Ar = self.model_gen(Qr, im_path)
+                samples[i]["conversation"][0]["query"] = Qr
                 samples[i]["conversation"][0]["answer"] = Ar
 
             self.save_jsonl(output_path, [samples[i]], mode='a+')
 
 
 # blip style
-prompt_v1 = 'Question: {}. Please answer yes or no. Answer:'
+prompt_v1 = 'Question: {} Please answer yes or no. Answer:'
 
 # in context learning style
 prompt_v2 = '''You are a data analyst, good at dealing with chart data. Now you are required to analyze a chart for the User. You only need to answer [yes] or [no].
@@ -114,11 +125,16 @@ Your Answer:
 
 chartqa_v1 = 'user:\nAnswer the question using a single word or phrase. {}\nassistant:\n'
 
+nqa_pot = 'Program of Thought: {}'
+acc_pot = 'Fact Checking: {}'
+
 sys_prompt = {
     'blip2 style': prompt_v1,
     'ICL style': prompt_v2,
     'llava style': prompt_v3,
     'llava style no or yes': prompt_v4,
     'blip style no or yes': prompt_v5,
-    'chartqa': chartqa_v1
+    'chartqa': chartqa_v1,
+    'nqa_pot': nqa_pot,
+    'acc_pot': acc_pot
 }

@@ -1,4 +1,4 @@
-import re, copy, json
+import os, re, copy, json
 from typing import Optional
 
 metric_group = {
@@ -6,17 +6,25 @@ metric_group = {
     'combination': ['bar_line', 'line_line', 'pie_bar', 'pie_pie'],
     'pie': ['sector', 'ring_wo_anno', 'pie', 'ring', 'InteSun'],
     'scatter': ['scatter_2d', 'scatter_2d_smooth', 'scatter_3d'],
-    'line': ['line_err', 'line_multi_wi_anno', 'line_multi', 'line_single_wi_anno', 'line_single'],
-    'bar': ['horizontal_single', 'vertical_single', 'horizontal_single_wi_anno', 'vertical_single_wi_anno', 
-            'vertical_percent_stacked', 'horizontal_multi', 'vertical_multi', 'threeD_stacked', 'vertical_stacked', 
-            'horizontal_stacked', 'threeD_bar_multi', 'horizontal_percent_stacked', 'threeD_percent_stacked'],
-    'radar': ['radar_single_wi_anno', 'radar_single', 'radar_multi_fill', 'radar_multi'],
+    'line': ['line_err', 'line_multi_wi_anno', 'line_multi', 
+             'line_single_wi_anno', 'line_single'],
+    'bar': ['horizontal_single', 'vertical_single', 
+            'horizontal_single_wi_anno', 'vertical_single_wi_anno', 
+            'vertical_percent_stacked', 'horizontal_multi', 
+            'vertical_multi', 'threeD_stacked', 'vertical_stacked', 
+            'horizontal_stacked', 'threeD_bar_multi', 
+            'horizontal_percent_stacked', 'threeD_percent_stacked'],
+    'radar': ['radar_single_wi_anno', 'radar_single', 
+              'radar_multi_fill', 'radar_multi'],
     'area': ['area', 'area_stack', 'area_percent'],
     'node': ['node_link', 'node_link_dir', 'node_link_undir'],
-    'wi_anno': ["horizontal_single_wi_anno", "vertical_single_wi_anno", "pie_pie", "pie_bar", 
-                "radar_single_wi_anno", "node_link_dir", "node_link_undir", "ring_wi_anno", 
+    'wi_anno': ["horizontal_single_wi_anno", "vertical_single_wi_anno", 
+                "pie_pie", "pie_bar", 
+                "radar_single_wi_anno", "node_link_dir", 
+                "node_link_undir", "ring_wi_anno", 
                 "line_multi_wi_anno", "line_single_wi_anno"],
-    'wo_anno': ["horizontal_single", "vertical_single", "bar_line", "line_line", "radar_single", 
+    'wo_anno': ["horizontal_single", "vertical_single", 
+                "bar_line", "line_line", "radar_single", 
                 "ring", "line_multi", "line_single"]
 }
 
@@ -193,6 +201,7 @@ def eval_one_model(result_path):
 def show_final_table(stat_paths):
     from prettytable import PrettyTable
     from openpyxl import Workbook
+    import pandas as pd
     
     results = [eval_one_model(p) for p in stat_paths]
     print(results)
@@ -215,7 +224,31 @@ def show_final_table(stat_paths):
 
         workbook.save(f"./Paper_Table/{metric}.xlsx")
 
+    df1 = pd.read_excel("./Paper_Table/accp.xlsx")
+    df2 = pd.read_excel("./Paper_Table/nqa.xlsx")
+    first_column = df2.iloc[:, 0].copy()
+    first_column.name = 'all'
+    df1_reordered = df1[df2.columns[1:]]
+    df2_data = df2.iloc[:, 1:]
+    
+    missing_columns = set(df2.columns[1:]) - set(df1.columns)
+    if missing_columns:
+        raise ValueError(f"Missing columns in file1 that are present in file2: {missing_columns}")
+
+    weighted_average = (df1_reordered * 0.8 + df2_data * 0.2)
+    final_result = pd.concat([first_column, weighted_average], axis=1)
+    final_result.to_excel('./Paper_Table/all.xlsx', index=False)
+    print(final_result)
 
 if __name__ == '__main__':
-    stat_paths = ['/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/InternLM-XComposer-v2.jsonl']
+    # stat_paths = [
+    #     '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/InternLM-XComposer-v2.jsonl',
+    #     '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/chartgemma-pot.jsonl',
+    #     '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/OneChart.jsonl',
+    #     '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/Ours.jsonl'
+    # ]
+    
+    # prefix = '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/'
+    # stat_paths = [os.path.join(prefix, p) for p in os.listdir(prefix)]
+    stat_paths = ['/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/tinychart_new.jsonl']
     show_final_table(stat_paths)
