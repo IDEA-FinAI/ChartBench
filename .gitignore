@@ -1,5 +1,4 @@
 data/*
-Result/*
 .vscode
 *.log
 *.pyc
@@ -7,4 +6,3 @@ Result/*
 Stat/Paper_Table/*
 Stat/Paper_Table_backup/*
 Stat/play.py
-test_toy.jsonl
