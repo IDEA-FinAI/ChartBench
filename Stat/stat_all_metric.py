@@ -1,4 +1,6 @@
 import os, re, copy, json
+from prettytable import PrettyTable
+from openpyxl import Workbook, load_workbook
 from typing import Optional
 
 metric_group = {
@@ -18,11 +20,14 @@ metric_group = {
               'radar_multi_fill', 'radar_multi'],
     'area': ['area', 'area_stack', 'area_percent'],
     'node': ['node_link', 'node_link_dir', 'node_link_undir'],
+}
+
+metric_anno = {
     'wi_anno': ["horizontal_single_wi_anno", "vertical_single_wi_anno", 
-                "pie_pie", "pie_bar", 
-                "radar_single_wi_anno", "node_link_dir", 
-                "node_link_undir", "ring_wi_anno", 
-                "line_multi_wi_anno", "line_single_wi_anno"],
+            "pie_pie", "pie_bar", 
+            "radar_single_wi_anno", "node_link_dir", 
+            "node_link_undir", "ring_wi_anno", 
+            "line_multi_wi_anno", "line_single_wi_anno"],
     'wo_anno': ["horizontal_single", "vertical_single", 
                 "bar_line", "line_line", "radar_single", 
                 "ring", "line_multi", "line_single"]
@@ -147,12 +152,12 @@ def eval_all_metric_in_chartbench(results):
                     update_yes_no(metrics, group_key, accp, cor, acc, err)
                     update_yes_no(metrics, metric_category, accp, cor, acc, err)
 
-            anno_key = 'wi_anno' if chart_type in metric_group['wi_anno'] else 'wo_anno'
+            anno_key = 'wi_anno' if chart_type in metric_anno['wi_anno'] else 'wo_anno'
             update_yes_no(metrics, anno_key, accp, cor, acc, err)
 
             if task_type:
                 update_yes_no(metrics, task_type, accp, cor, acc, err)
-                task_anno_key = f'wi_{task_type}' if chart_type in metric_group['wi_anno'] else f'wo_{task_type}'
+                task_anno_key = f'wi_{task_type}' if chart_type in metric_anno['wi_anno'] else f'wo_{task_type}'
                 update_yes_no(metrics, task_anno_key, accp, cor, acc, err)
                 
         if item["type"]["QA"] == 'GPT-acc':
@@ -163,7 +168,7 @@ def eval_all_metric_in_chartbench(results):
             else:
                 eval_answer = item['conversation'][0]['answer']
             nqa = max([
-                    relaxed_correctness(eval_answer.strip(), ann)
+                    relaxed_correctness(eval_answer.strip().strip('<\uff5cend\u2581of\u2581sentence\uff5c>'), ann)
                     for ann in item['conversation'][0]['label']
             ])
             update_nqa(metrics, 'all', nqa)
@@ -174,7 +179,7 @@ def eval_all_metric_in_chartbench(results):
                     update_nqa(metrics, group_key, nqa)
                     update_nqa(metrics, metric_category, nqa)
 
-            anno_key = 'wi_anno' if chart_type in metric_group['wi_anno'] else 'wo_anno'
+            anno_key = 'wi_anno' if chart_type in metric_anno['wi_anno'] else 'wo_anno'
             update_nqa(metrics, anno_key, nqa)
 
     metrics = {
@@ -187,32 +192,34 @@ def eval_all_metric_in_chartbench(results):
 
     for item in results: classify_item(item, metrics)
 
+    merged_metric = copy.deepcopy(metric_record_nqa)
+    for key in metric_record_nqa.keys():
+        if key in metric_record_acc:
+            merged_metric[key] = metrics['nqa'][key] + metrics['accp'][key]
+    metrics['final'] = merged_metric
     ans_stat = {key: {k: format_percent_metric(v) for k, v in metrics[key].items()} for key in metrics}
     return ans_stat
 
 def eval_one_model(result_path):
     model_name = result_path.split('/')[-1].replace('.jsonl', '')
-    with open(result_path, 'r') as fp:
+    print(result_path)
+    with open(result_path, 'r', encoding='utf-8') as fp:
         lines = fp.readlines()
         answers = [json.loads(l) for l in lines]
     results = eval_all_metric_in_chartbench(answers)
     return [results, model_name]
 
-def show_final_table(stat_paths):
-    from prettytable import PrettyTable
-    from openpyxl import Workbook
-    import pandas as pd
-    
+def show_final_table(save_root, stat_paths):
+
     results = [eval_one_model(p) for p in stat_paths]
-    print(results)
     
-    for metric in ['acc', 'cor', 'accp', 'err', 'nqa']:
+    for metric in ['acc', 'cor', 'accp', 'err', 'nqa', 'final']:
         table = PrettyTable()
         table.field_names = [metric] + list(results[0][0][metric].keys())
         for res in results:
             row = [res[1]] + [f'{i:.2f}' for i in res[0][metric].values()]
             table.add_row(row)
-        print(table)
+        if metric == 'final': print(table)
 
         workbook = Workbook()
         worksheet = workbook.active
@@ -222,33 +229,24 @@ def show_final_table(stat_paths):
             for j, cell in enumerate(row, start=1):
                 worksheet.cell(row=i, column=j, value=cell)
 
-        workbook.save(f"./Paper_Table/{metric}.xlsx")
+        workbook.save(os.path.join(save_root, f"Paper_Table/{metric}.xlsx"))
 
-    df1 = pd.read_excel("./Paper_Table/accp.xlsx")
-    df2 = pd.read_excel("./Paper_Table/nqa.xlsx")
-    first_column = df2.iloc[:, 0].copy()
-    first_column.name = 'all'
-    df1_reordered = df1[df2.columns[1:]]
-    df2_data = df2.iloc[:, 1:]
-    
-    missing_columns = set(df2.columns[1:]) - set(df1.columns)
-    if missing_columns:
-        raise ValueError(f"Missing columns in file1 that are present in file2: {missing_columns}")
-
-    weighted_average = (df1_reordered * 0.8 + df2_data * 0.2)
-    final_result = pd.concat([first_column, weighted_average], axis=1)
-    final_result.to_excel('./Paper_Table/all.xlsx', index=False)
-    print(final_result)
 
 if __name__ == '__main__':
     # stat_paths = [
-    #     '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/InternLM-XComposer-v2.jsonl',
-    #     '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/chartgemma-pot.jsonl',
-    #     '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/OneChart.jsonl',
-    #     '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/Ours.jsonl'
+    #     '../Result/raw/ChartGemma.jsonl',
+    #     '../Result/raw/DeepSeek-VL2.jsonl',
+    #     '../Result/raw/Qwen2-VL.jsonl',
+    #     '../Result/raw/Qwen2.5-VL.jsonl',
+    #     '../Result/raw/Gemini2-Flash.jsonl',
+    #     '../Result/raw/InternVL2.5.jsonl',
+    #     '../Result/raw/Phi-3.5-Vision.jsonl',
+    #     # '../Result/raw/Llama3.2-Vision.jsonl',
+    #     '../Result/raw/Phi4-MM.jsonl',
+    #     '../Result/raw/ChartMoE.jsonl',
+    #     '../Result/raw/OneChart.jsonl'
     # ]
-    
-    # prefix = '/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/'
-    # stat_paths = [os.path.join(prefix, p) for p in os.listdir(prefix)]
-    stat_paths = ['/data/FinAi_Mapping_Knowledge/qiyiyan/xzz/ChartLLM/ChartBench/Result/raw/tinychart_new.jsonl']
-    show_final_table(stat_paths)
+    save_root = '../Result/'
+    prefix = '../Result/raw'
+    stat_paths = [os.path.join(prefix, p) for p in os.listdir(prefix)]
+    show_final_table(save_root, stat_paths)
