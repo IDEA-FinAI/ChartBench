@@ -2,7 +2,4 @@ data/*
 .vscode
 *.log
 *.pyc
-./Repos/Ours/*
-Stat/Paper_Table/*
-Stat/Paper_Table_backup/*
-Stat/play.py
+*.DS_Store
